@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIlRhY8OzTG9nIFBSTyIsICJzaG9ydF9uYW1lIjogIlRhY8OzTG9nIiwgImRlc2NyaXB0aW9uIjogIlJlZ2lzdG8gZGUgdGVtcG9zIENFIDU2MS8yMDA2IiwgInN0YXJ0X3VybCI6ICIuLyIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjMGEwYzEwIiwgInRoZW1lX2NvbG9yIjogIiMwYTBjMTAiLCAib3JpZW50YXRpb24iOiAicG9ydHJhaXQtcHJpbWFyeSIsICJsYW5nIjogInB0IiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTUFBQUFEQUNBWUFBQUJTM0d3SEFBQUpjRWxFUVZSNG5PM2RTMndVOXgzQThkL3NlNzNydC96QXhuSWhJTUFWWUlrMFVWRGRFQzVGaFV1a25Fb1VGRVZxVDcwa1VsUlZhdFdjMmt0UjJxb1Nsd3JsMHFRTkZVclZFS0trcUNwVmdvSjRSa0FnRHpBT3hzUVk0N1c5ejNuMFFCMTJ6WHFmWSsrdWY5L1BiV2ZYNDRYOHZ2T2ZtVjBGRVFBQUFBQUFBQUJZMVl4eVh1ejhXWnpsZWlPQW00eVhTcHZ0a2w3RTRLTlJGUXZCVTJ3SEREOGFXYkg1TFJvQXNKb1ZESUNqUDFhRFFuUE1DZ0RWQ0FDcUVRQlVLeGhBcWZkU2dYcFdhSTVaQWFCYTBRQllCZERJaXMwdlg0WEFxdVRxVnlISzBSUnRJeElzcS9qY2ZkZm0xdFZyQUlZZks4SE5PWE10QUlZZks4bXRlWE1sQUlZZnRlREczRlVkQU1PUFdxcDIvcW9LZ09GSFBhaG1EdmtnREtwVkhBQkhmOVNUU3VleG9nQVlmdFNqU3VhU1V5Q29WbllBSFAxUno4cWRUMVlBcUZaV0FCejkwUWpLbVZOV0FLaFdjZ0FjL2RGSVNwMVhWZ0NvVmxJQUhQM1JpRXFaVzFZQXFFWUFVSzFvQUp6K29KRVZtMTlXQUtoR0FGQ05BS0FhQVVDMWdnRndBWXpWb05BY3N3SkFOUUtBYWdRQTFRZ0FxaEVBVkNNQXFFWUFVSTBBb0JvQlFEVUNnR29FQU5VSUFLb1JBRlFqQUtoR0FGQ05BS0FhQVVBMUFvQnFCQURWQ0FDcUVRQlVJd0NvUmdCUWpRQ2dHZ0ZBTlFLQWFnUUExUWdBcWhFQVZDTUFxRVlBVUkwQW9Cb0JRRFZmcmQ5QU1RZWZTOGhQUjFLMWZodkxidVIzelhMMnBuZko1L3ZiYkxuMldxeXEzOUgzODFhWlNSaFY3V08xWVFXQWFnUUExUWdBcWhFQVZDTUFxRVlBVUkwQW9Cb0JRRFVDZ0dvRUFOVUlBS3JWL1hlQlhqNFNscGVQaEYzZDUvR2Z6Y25JQnJQaW4zL2xTRmdPblF5NitJNVFLNndBVUkwQW9Cb0JRRFVDZ0dvRUFOVUlBS29SQUZRakFLaEdBRkNOQUtBYUFVQTFBb0JxQkFEVkNBQ3FFUUJVSXdDb1JnQlFqUUNnR2dGQU5RS0FhZ1FBMVFnQXFoRUFWQ01BcUVZQVVJMEFvQm9CUURVQ2dHb0VBTlVJQUtvUkFGUWpBS2hHQUZDTkFLQWFBVUExQW9CcUJBRFZDQUNxMWYwL2t3cjNqUDkyWmtWLzN5L2VDY3Z2VDlUM1B5ZkxDZ0RWQ0FDcWNRcFV3TCt1eTdta0tlbkYyM2R2VDhpdWJRbGpQbVY0YjAxN3crZEhmYTBmWGdwMnh4S0dmL0ZyRDcwWU85Y1JzUi9aaDRoSTJqUThjeW5EZCt1ZUozeDIxTjkyNG5LZ0s1RTJ2TVhlVnp3anFiR1lUTjVMU0d3K0xjbU1MYWJIRUUvUUsvN1drRVI2SXRLK0ppb2RoaUZHWlg5eVBRaWdRaDVEbk9hUVkyNWVZODV1WG1QTzdoMU9UYnorZm1URHAyTysxbEwzRWZBNWRvZlBTWGRFN1BUV0FYTm0zM0RxOXErUFJyZmNtZkdFOHIzZWNjUzVjbGR1M3BpUk80NGpUdlp6dGlPV2FZczFuNUhrK0t4TVhmVkxjTGhYTnJTSEpGcnRuM1UxNHhUSUpjMGh4M3gxNy95MXJoWTdWZWsrT3FOMitxV25FNlA1bnZNWTRwd2VsNnZYNzh2RTR1SFBKNTZSMUttdjVmSTM4M0svMHZlakFTdEFHWWE2WkhCZG0vUytjaVFzZnozcnorelpscDU0ZGtkeWZPSDVvTSt4OTIxUFRSdytHUjVjYWg5dm5Bd1B2bnNoMk92M2l0M1hiaVYvc2l0eGZXT3ZPYmZ3L0xhQnpJemZLM2JHeWowNC9XZzQ5ZlZrWEhKdTQzUkhwRzFqaDZ4dENVcll0TVc2TXlmVG4wM0pXTm9TVTBURWRzUTVOeUZmL0dCUXRvVjlFbkR2YjJMMVlBV28wUFM4eC8vbXg2R0JLK08rNXV6dFcvck5XQ2svbjdIRU0zclgyL1QySjhIKzdPMGVRNXlRMzdHenQ3VTEyWm1uTjZjbXNyZDFSNlR0OFQ3WjFCYVNpTWNRVDhBci9vRlc2WDZ5WDdaNHNzNzlUVnVzTCsvSnJmTC9oRG9RUUpYRzdubWJzaDgzaHh5em5KODNGbDJtSnRLR2R6WnA1S3pNVDIzTVRQbThraFBGVUpjTTVydkNiUWxLMDlvVzZjcmVkbXRXcGh3cGZ0cWtFUUZVYWFERGltYy9Yank4Uy9GN3hSN3N0T0xQUFpITU9UcWZ1QkxvV3Z6YW9UNXpOdnR4YzBEQ0ViL2t2VkFXRWVtTlNrZjJZOU1XSzVhUytGS3YxNHhyZ0FxMVIrek1ubTNwaVMyTGh2UEt1SytsME04ZEdFbU1IaGpKZjZGNytpdC8rNXNmaHdZV2IrK001dDVHalFZa1hPaDNSUFBFa2NoSXVqVW9rVUkvcHhFQmxPSHlwSXhlbnBUUjNkc1RzbnQ3NHBIblU2YmhlZmQ4c0xmYy9Ub2k4cGVQd2dQdm5BMzI1WHMrSEJBcis3SFhJd1UvSzhqM3ZHbm43Z01QcUF4Z3p4OUx1elYrNk1XWWRFVHM0aThVa2ZtVTRYdjkvY2lHYjJLZXNyLzhZb2pJL3AySk1VZkUrTWZaNEpyRnp5ZlN1UVA5OWxtL3RmUDQwZ2Z6cmhiYit0TUx1ZGZpengrT2VFOS85Y2puZE9xcERNQU50aU5HL1ArZkJGKzQ2V3Y5NEZLd2V5Yis2Q2ZCaTcxeE1qeDQ3R0t3dDZmRlRoNFlTWXp1K0U3bS9zSnorNTlLM0x4NjJ4dTllanYzenRMVW5DZXdvZWZoQWJ5LzNVNFcraDE5Ylk4K1B6WG40VFpvSGdSUWhvVjcrTlh1eDNGRUptWThvWVB2UlRZZS9ISHMwNTdXQndOckdDTFA3MHlPL2ZMdjBhSHMxMThlOXpVLytWam0zc0xqZ1U0cjN0TnFKNWY2eFBpSjlROWZLL0xnenRLTnlkeTdWWGlBdTBBMWxMSEU4N2RQUWptZkEyeGFZODR1dnJBKzlZVy9NMk1aMy82M01rVGtoZThuYnVhN0RUcllhY1YzYlVuZHpkNzIzMnYrVHR2aGUwSDVFRUNOZmZSNW9IUHg2Y20rNGRUdDdNZlQ4eDcvc1F1Qm51eHQzMXVYbVg1MTcveTE5ZDNXdk44cmRuUElNWjhaU2svKzZ0bTVLLzZzend3U2FjTjc5RXh1WkhpSVU2QWFzMnd4amw4TTl1emZtUmhiMlBiNHVzeDBiNnVkbk1nNnhYbnJWSGhnZlpjVjN6cGdmdnQxaUIzck10TTcxbVdtQyszN0R4ODBQWFozbHZQL3BiQUMxSUVQTHdXNlU1bXNVeHhEWk85dzdsY2ZMRnVNMy93enV1bTlpOEhlVWs1bkptT2U0R3RIbzF2T1hQZTNMOGQ3WGkxWUFlckFmTXJ3L2Z1elFOY1B0NmJ1TEd6YnRUazkrZGFwME5yNTFNTlBsazFMak1QL0NROGVPeC9zZldZb1BmbmRmalBXMjJvbG95SEhUSnVHSjVZMGZGL2U4VWJQM1BDM2ZmUjVvTk95T2U4dnB1QmZVRk8wamUrUFlGV0l6OTNQTyt1Y0FrRzFnZ0VzVlEzUVNBck5NU3NBVkNNQXFFWUFVSTBBb0ZyUkFMZ1FSaU1yTnIrc0FGQ05BS0JhU1FGd0dvUkdWTXJjc2dKQXRaSURZQlZBSXlsMVhsa0JvRnBaQWJBS29CR1VNNmVzQUZDdDdBQllCVkRQeXAxUFZnQ29WbEVBckFLb1I1WE1aY1VyQUJHZ25sUTZqNXdDUWJXcUFtQVZRRDJvWmc2clhnR0lBTFZVN2Z5NWNncEVCS2dGTitiT3RXc0FJc0JLY212ZVhMMElKZ0tzQkRmbnpQVzdRRVNBNWVUMmZDM0xiVkFpd0hKWWpybGF0czhCaUFCdVdxNTVXdFlQd29nQWJsak9PVnF4QWVYL05JMXlyY1FCZE1XK0NzRnFnSEtzMUx6VVpDaFpEYkNVbFQ1UTF2U29UQWhZVUtzemhMbzRMU0VFdldwOWFsd1hBU3dnQkQxcVBmZ0w2dUpONUVNTXEwKzlESDIydW50RGhSQkY0NmpIWVFjQUFBQUFBSUJXL3dQeUh1Qk1BdFVTc0FBQUFBQkpSVTVFcmtKZ2dnPT0iLCAic2l6ZXMiOiAiMTkyeDE5MiIsICJ0eXBlIjogImltYWdlL3BuZyJ9LCB7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQWdBQUFBSUFDQVlBQUFEMGVOVDZBQUFhcjBsRVFWUjRuTzNkVzR4YzkzM1k4ZjljZDVlN3l6dEZpaUpGV1NJcFc1WXMyWll0TzI1aU40bHN4MjBBSjNDZE5FWGdHSUpSb0VBYnhNaURDL1NDcEVqNkVEUndIbm9KM0NRMkVDZHhYS05wamJaV1UxaUdyY2lTSER1MVlsMG9pcnJ3SXBFVUwwdnVMbWQyZGk1OVVDVlRzaWpPMlozTE9mUDdmSjRFYVM1SFozYjM5NTMvbkhNbUpRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBSmhNcFhGdlFPOFBVbS9jMndBQTQxQzZaM3h6ZUN4UGJPZ0R3S3VOT2daRyttUUdQd0M4c1ZHRlFIa1VUNUtTNFE4QS9SalZ2QnhKQUJqK0FOQy9VY3pOb1FlQTRROEEyUTE3Zmc0MUFBeC9BRmk3WWM3Um9RV0E0UThBNnplc2VUcXlnd0FCZ1B3WVNnQjQ5dzhBZ3pPTXVXb0ZBQUFDRWdBQUVOREFBOER5UHdBTTNxRG5xeFVBQUFoSUFBQkFRQUlBQUFJU0FBQVFrQUFBZ0lBRUFBQUVOUEFBS04yVFNvTitUQUNJYnREejFRb0FBQVFrQUFBZ29LRUVnSThCQUdCd2hqRlhyUUFBUUVCREN3Q3JBQUN3ZnNPYXAwTmRBUkFCQUxCMnc1eWpRLzhJUUFRQVFIYkRucDhqT1FaQUJBQkEvMFl4TjBkMkVLQUlBSUNyRzlXOEhNdFE3djFCNm8zamVRRWdyMGI5Um5uczc4ckZBQUJSalhOMWZPd0JNRXdiNWphTEN3RFc1ZExTd2tUT3lvbTlFSkRoRDhBZ1RPbzhtY2dBbU5RWEM0RHhtTVM1TW5FQk1Ja3ZFZ0RqTjJuelphSUNZTkplSEFEeVpaTG16TVFFd0NTOUtBRGsxNlRNbTRrSWdFbDVNUUFvaGttWU80VVBnRWw0RVFBb25xTFBuMElIUU5GM1BnREZWdVE1Vk5nQUtQSk9CMkJ5RkhVZUZUSUFpcnF6QVpoTVJaeExoUXdBQUdCOUNoY0FSYXdzQUNaZjBlWlRvUUtnYURzWGdGaUtOS2NLRXdCRjJxa0F4RldVZVZXWUFBQUFCcWNRQVZDVW1nS0FsSW94dDNJZkFFWFlpUUR3V25tZlg3a09nTHp2UEFCNEkzbWVZN2tPQUFCZ09ISWJBSG11SmdEb1YxN25XUzRESUs4N0N3RFdJbzl6TFpjQkFBQU1WKzRDSUkrVkJBRHJsYmY1bHJzQUFBQ0dMMWNCa0xjNkFvQkJ5dE9jeTAwQTVHbW5BTUN3NUdYZTVTWUFBSURSeVVVQTVLV0dBR0FVOGpEM2NoRUFBTUJvalQwQThsQkJBREJxNDU1L1l3OEFBR0QweGhvQTQ2NGZBQmluY2M1Qkt3QUFFTkRZQXNDN2Z3QVkzenkwQWdBQUFZMGxBTHo3QjRBZkdzZGN0QUlBQUFFSkFBQUlhT1FCWVBrZkFIN1VxT2VqRlFBQUNHaWtBZURkUHdCYzJTam5wQlVBQUFoSUFBQkFRQ01MQU12L0FIQjFvNXFYVmdBQUlDQUJBQUFCalNRQUxQOERRUDlHTVRldEFBQkFRQUlBQUFJYWVnQlkvZ2VBN0lZOVA2MEFBRUJBQWdBQUFoSUFBQkRRVUFQQTUvOEFzSGJEbktOV0FBQWdJQUVBQUFFSkFBQUlhR2dCNFBOL0FGaS9ZYzFUS3dBQUVKQUFBSUNBQkFBQUJDUUFBQ0Nnb1FTQUF3QUJZSENHTVZldEFBQkFRQUlBQUFJU0FBQVFrQUFBZ0lBRUFBQUVKQUFBSUNBQkFBQUJEVHdBWEFNQUFBWnYwUFBWQ2dBQUJDUUFBQ0FnQVFBQUFRa0FBQWhJQUFCQVFBSUFBQUlTQUFBUWtBQUFnSUFFQUFBRUpBQUFJQ0FCQUFBQkNRQUFDRWdBQUVCQUFnQUFBaElBQUJDUUFBQ0FnQVFBQUFRa0FBQWdJQUVBQUFFSkFBQUlTQUFBUUVBQ0FBQUNFZ0FBRUpBQUFJQ0FCQUFBQkNRQUFDQWdBUUFBQVFrQUFBaElBQUJBUUFJQUFBSVNBQUFRa0FBQWdJQUVBQUFFSkFBQUlDQUJBQUFCQ1FBQUNFZ0FBRUJBQWdBQUFoSUFBQkNRQUFDQWdBUUFBQVFrQUFBZ0lBRUFBQUVKQUFBSVNBQUFRRUFDQUFBQ0VnQUFFSkFBQUlDQUJBQUFCQ1FBQUNBZ0FRQUFBUWtBQUFoSUFBQkFRQUlBQUFJU0FBQVFrQUFBZ0lBRUFBQUVKQUFBSUNBQkFBQUJDUUFBQ0VnQUFFQkFBZ0FBQWhJQUFCQ1FBQUNBZ0FRQUFBUWtBQUFnSUFFQUFBRUpBQUFJU0FBQVFFQUNBQUFDRWdBQUVKQUFBSUNBQkFBQUJDUUFBQ0FnQVFBQUFRa0FBQWhJQUFCQVFBSUFBQUlTQUFBUWtBQUFnSUNxNDk0QSt2UDR2NzZZcnQvYUhmZG1NT0greTkvVTBpYytQenVVeHo3OG14ZlQ3azNGK0JuK2xTOXNTRi8rWG4zY213RkRaUVVBQUFJU0FBQVFrQUFBZ0lBRUFBQUVKQUFBSUNBQkFBQUJDUUFBQ0VnQUFFQkFBZ0FBQWhJQUFCQ1FBQUNBZ0FRQUFBUWtBQUFnSUFFQUFBRUpBQUFJU0FBQVFFQUNBQUFDRWdBQUVKQUFBSUNBQkFBQUJDUUFBQ0FnQVFBQUFRa0FBQWhJQUFCQVFBSUFBQUlTQUFBUWtBQUFnSUFFQUFBRUpBQUFJQ0FCQUFBQkNRQUFDS2c2N2cyZ1AyLzVqWTNqM29TaHVlWGFUdnJPWnhiSHZSbDkyLzJaVGVsQ296VHV6UUJZRnlzQUFCQ1FBQUNBZ0FRQUFBUWtBQUFnSUFFQUFBRUpBQUFJU0FBQVFFQUNBQUFDRWdBQUVKQUFBSUNBQkFBQUJDUUFBQ0FnQVFBQUFRa0FBQWhJQUFCQVFBSUFBQUlTQUFBUWtBQUFnSUFFQUFBRUpBQUFJQ0FCQUFBQkNRQUFDRWdBQUVCQUFnQUFBaElBQUJDUUFBQ0FnQVFBQUFRa0FBQWdJQUVBQUFFSkFBQUlTQUFBUUVBQ0FBQUNFZ0FBRUpBQUFJQ0FCQUFBQkNRQUFDQWdBUUFBQVFrQUFBaElBQUJBUUFJQUFBSVNBQUFRa0FBQWdJQUVBQUFFSkFBQUlDQUJBQUFCQ1FBQUNFZ0FBRUJBQWdBQUFoSUFBQkNRQUFDQWdBUUFBQVFrQUFBZ0lBRUFBQUVKQUFBSVNBQUFRRUFDQUFBQ0VnQUFFSkFBQUlDQUJBQUFCQ1FBQUNBZ0FRQUFBUWtBQUFoSUFBQkFRQUlBQUFJU0FBQVFrQUFBZ0lBRUFBQUVKQUFBSUNBQkFBQUJDUUFBQ0VnQUFFQkFBZ0FBQWhJQUFCQ1FBQUNBZ0FRQUFBUWtBQUFnSUFFQUFBRUpBQUFJU0FBQVFFQUNBQUFDRWdBQUVKQUFBSUNBQkFBQUJDUUFBQ0FnQVFBQUFRa0FBQWhJQUFCQVFBSUFBQUlTQUFBUWtBQUFnSUFFQUFBRUpBQUFJQ0FCQUFBQkNRQUFDRWdBQUVCQUFnQUFBaElBQUJDUUFBQ0FnQVFBQUFRa0FBQWdJQUVBQUFFSkFBQUlTQUFBUUVEVmNXOEFRTjU4L2hPWDB1Yy9jV25jbTFFWWYvOC96S1g3RGhrblJXTUZBQUFDRWdBQUVKQUFBSUNBQkFBQUJDUUFBQ0FnQVFBQUFRa0FBQWpJaVp0QTdqVGFxYlhRVEVzTHpiUzAzRXJOUmp1MVZ0cXAxZW1sYnFlWHVpbWxWQ21sY3JXY0t0UFZWSitwcHZwY1BjMXNuazV6bTZmVFhMM2lieHRjalY4U3dubnVRanI5ZzlQcG1iWGUvM1AzWEhqbG4zc3BwV2FyVkxuVUtsVXVyWlFxU3l1bDZ0R3psUTFQdjFpWmZmcFVaZmJZdWNwTXQ1ZEs2OTNtdTI5ZE9mMnBEelRXdk0ydmJHOHZwWGEzVkc2MVUzbXBXYXBlYUpTcnB5K1dwMDZjTDg4OGZib3krOFFMMWZsR3ExUlo3L09zUmFPZFdzY3ZwaGRQTHFWekYxZlNWYS9DMCs2bFRydWJPczEyYWkxYzl1OUxLYVV0TTJsKzExemF1bWRqMmw0cit6c0hyOGN2QnF4REthVTBVKzkxWnVxOXpyYTVsLzdkVzNhM0YxLys3K2VYeS9YN0hxL3YrUHBqOVIybkw1YW54clNacnlpVlVxcFZldDFhSlhWbnAzcnRuWnU2NmVDdXRQVHlmKzkwVStteDU2dnozM2k4dnVPQncvVnRuZTc2NCtWcWxsdXBlZWhzT25aeUtaM3Z2ZFJVNjlKTEtaMXJwTVZ6amJSNDZFdzZ0bWRqMm5GZ1c3cHVxcEpxQTloY21CZ0NBSVpveTJ5MzlmTjNOay84M0ozTkUvY2ZxbS8vL0xkbTlpMDJTN245dmF1VVUrKzJQZTJMdCsxcFgvekY5elNQZitGYk0vc2VmcnEyWlJqUDFlbWw3cUV6NmRpekY5S3BYbS85Zy85S3ovSGNoWFRxeEdJNmMyQnJ1dTdHTGVuYVlUd1BGSkdEQUdFRVNpbWxINys1ZGVaMy85SEZSKzY2YWZYY3VMZW5IenZtdXl1Ly9wSGxKKzk1ZitQWjBvRFhBWlphcVhILzBmU0RaeGJTeVdFTi84dTF1Nm56K0psMDlLRVQ2ZkdWVGxvZDl2TkJFUWdBR0tGTk03M1ZULy9NOHVHL2Qvdkt5WEZ2Uzc4K2ROdktxWHZlMzNoMlVJOTNycEVXSHppV0hsMXFwY2FnSHJOZlp5NmxpdzhjUzQ4dXI2Ym1xSjhiOGtZQXdJaVZVa3FmK1BIR2MrODcyRG83N20zcDF3ZHZYVGsxaUpXTGM0MjArTkNKOU1ScU4zVUdzVjFyY1drMXJYejdXSHFzc1pwV3hyVU5rQWNDQU1ia0gvL2R4ak03NXJ1RkdVSy8vTDdHMFVwNTdjdjF6WFpxL1BYejZjbnUveitOYjV4V09tbjFvZWZURTZ2ZDFCNzN0c0M0NVBaZ0pKaDAwN1ZlNTVkK3JIbnM5Kzdkc0gvYzI5S1BheloyVis3WXQ3cnczV2V5SHhSWXE2VHVzeGU3VDYxbDRFNVhVMzNYWE5xNmN6WnRtYW1sK25RbDFYc3A5WnJ0MUxxMG1sWk9McVZ6SjVmUytheVB2ZHhLemI4OWxaNTV4N1hwUU5adGdra2dBT0FxUG5oVHVyTldUcStjRzcvN001dlNoVVlwbFV1cE56dlY2K3plMG1tOGJXLzd3dDIzdGs1djN0RE5kSURaaisxdm5mM1RiMC92SGZRcGdwLzgzS1k3bDFkZWZUNS9yZExyems3MU90ZHQ3VGJ1dUg1MTRTZHZhYjA0UDkzTE5EVGY5YWJWODJzSmdGKzRxM0c4MGI3NnVmMlhLNWRTK2NEV3RQdW1MV2wzcWZTanB5UE8xZFBNWEQzTlhET2JOdCt5STNVT25VM0hubDFJcDdJOHh3dEw2ZHlKeFhUbXV2bTBQY3Y5WUJMNENBRFdxTnRMcGNWbXFYcm9oZXI4bHgrZTN2T3JmengvKzBOSGFsdXpQRWFwbE5Lb2pnVlk3WlRLQzVmS3RVZVBWemQrOFlHWjYzL3RpeHZmZHVSMFpUYkxZeHpjMVZtNitxMWViZWZHN3NwSE1oNzBXQ3VuNnZ2MnByZnUzNXF1ZTczaC8xclZjcXE4ZFVlNjRWMjcwODNsUG01L3VTZk9wR09kSEh3c0FhTW1BR0JBR3ExUzViUDN6dTUvNG9YcWZKYjd2VzF2KzhMVmJ6VjRGeHVsMnU5K2JmWkFsb3Y5N056VVdjbDZSdURINzJvZXIxYjZQM2FnVWtybGQxMlhEbTZjU2hzeVBsVzZaalp0dm1OWHVpbkxOamJicWZWY3hwVURtQVFDQUFhbzAwMmxMM3hyWmwrVys5eDBUV2Q1V050ek5TOWVMRTk5LzJodFU3KzNyMVZTZDdyZTYvc0kvazBiZXF2djNaOXRoZVBndHJSbnkzVEtGRkdYdTNZdWJkdTdLVjJUNVQ3UFhraW5objR4QXNnWkFRQURkdVIwWmZiTVlybmU3KzJuYTczT3BwbmUyQzVPYy9oVVpTN0w3YXNaemdUNHdKdGJMMlo1OXo5YlQ5TnYycHgyWmRtZTEzUHp0clQzOHVNMnJxYXhtbGJPWEVwaldZbUJjUkVBTUFSSHoxWXlMVi9QVFhmSGRqcmF4VVlwMHpYeUc2djlmMW5RdTI5cW5jL3kyUHV2Y01CZlZ2VktxdTdibkhabXVjL0pwVlNJS3pUQ29BZ0FHSUpMR2I5UnIxNGQzMEZvcFF4ZndOTm9sU3J0VG44RGV1Tk1iM1gvenY0UEdpeVhVbm5YWE1wMEVPVWIyWjN4eVA3VHkybGhVTThOUlNBQVlBZzJaUGljUEtXVVd1M3gvUzV1MnREL3h3L1BaVmpaT0xDcnZaVGxyZncxczJsVE5jT3kvZFhNMTlQTWZEM045SHY3Wmp1MW11M1VHdFR6UTk0SkFCaUNmZHM3bWM1NVgyeVd4M1pOam9PNzJuMi9Tei8wUXYvSEMyUTl1SEh6T2c3OHUrSmp6bVI3eklWbUd0c0JtVEJxQWdBRzdNRE96dEsydVc3Zjd5U2JxNlZLMXMvaEIrWGF6ZDNtYlh2YkYvdTkvVGNQMVhmMGU5dmRtenVadm5CbkxhZjlYZlV4TTZ3QXBKU1NMd2tpRWdFQUExUXBwOTR2LzUzRzBTejNPWElxMjhWNEJtWExiSGYxMHg5ZVBsd3U5WGNNd1BlUFZqY2RPMXZwZTZCdW4rOWwrcDZETE12MWZUOW14cWhvdEgxQkVIRzRGREFNeUV5OTEva25QM1hwNlRkZjIxN01jcjlIamxYN1BnOS9QV3FWMUoyZDZuYjJiTzAyM3I3dnBVc0J6MDcxZHluZzFVNnAvSWZmM0hCRGx1ZmJrdkd5eVBWS0d2Z3FTTmJIWEhFTUFJRUlBRmlqVWltbDJhbGVlL2ZtVHZQMjY5c1g3cjYxZFNycmR3SDBlaW5kZjdpK2JkRGI5a2VmdXZEWGczcXNYaStsMzd0M3cvNFhGc3JUV2U0M1ZldjFmV1pEdVpUS1dTL2gyNCtzQnhWMnVpNEpUQndDQUs3aWZ4OUpyeHFtbjd0bmNOZUxlZUNwK3JZWEIveEZRSVBVYUpVcS8vNy9iTGpwNGFlemZ3RlFsbE1iQjNuMC8zb2UxM2NDRUlrQWdERnBycFlxZi9MQTlONXhiOGVWZk8vWjJ1WXYzRCt6TCtzNy96d1orSklDVEJBQndOZzk5a0lsemY3cTVwRTkzOTIzcnFSUGZhQXhzdWU3a3QrL2IrWk5MeTdtNjkxL3ExMHFQM2lrdHZVdmYxQy81bERHTHpYNjBjZEs1ZWxhNnV0NkNNdXQxQm5HejhDMnVXN25QLzVLM3ljNXBQc09WY3MvL1R1WnJvd01oZVVzQUJpREw5dy9zKyt2bmh6OFovL3I5Zkp4RGZVTTErKy9rcFYycWUrL0w3Vks2bFl5Zk1kQXY3SmVrQ25MTmtQUldRR0FFYnJRS05YKzh6YzIzUERRa2RyQUxuazdTTFZLci92T0cxWVgzbm5ENnNKZlBWbmY5cC91bTdseFpYVnRRM0ZodVZ6Yk1kL3QrN1M2alRQZDl2bmw4a0RQQkpqUCtDVkw1NWY3L3hJbktEb0JBQ1BRU3luZGY2aSsvZlBmbXRtMzJDd1Y0dmZ1ZlFkYlozZHQ3alIvOHkvbTN0TEkrTjBHS2FWMFpxazBkU0NsdnE4eWVQMjI3cVh6eStXQm5oSjUvYlpPcHM5NnNueUxJeFJkSWY0UVFWR2RYeTdYdi9GRWZmdlhINnZ2T0hXaGVBZlQzWFJOWi9uVEgxNCsvTnRmblh0ekwrTUMvZlBuSzlNcDlmOEdmTi8yenFYdkh4M3NOUkgyYmN0MlNlWVhGc29EdnhnUjVKVUFnSFZxcnBZcWwxcWx5cVdWVW1WcHBWUTlkcll5YytSMFplN3AwNVhabzJjck05M2U2QTlHLytUbk50MjV2UExTdS9aeUtmVm1wM3FkNjdaMEd1KzRvYjF3OTYwcnAvdTlBRkJLS2QxK2ZmdkNSOS9SZlA2L2ZuZDZkNVp0T0hJNjJ4VU9EKzVxTDZZMGRXMlcrMXpOZ1YzOWZ4dGhTdG0zR1lwTUFNQlZYRDVNaTZqYlM2WEZacW42eEF2VitTZGVxTTUvOVcrbXJ2MzB6eXdmZnV0MS9YOEh3TWZlM1R6eDRKSDYxaXluQkI0K1daM3JwZjVQeFh2N3Z2YUZtWHF2czVhUEcxN1BucTJkeHZVWlZnRE9MWmZyWjVkOEJFQWNqbmlGWUJhYnBlcS8vZXJzellkUDlmL05mclZLNm43eUp4clBaWG1lQzQxUzdVaW01K2gxNzdwcDlWeVc1M2dqUDM1dzlVeVcyMy92MmVybVFUMDNGSUVBZ0lCYTdWTDVzL2ZPN3MveWJ2dU82MWNYYnQzVC82cEJTaWxsdllMZ1I5L1JmSDRRcHdQT1QvZmFIN3h0NVhTVyszeG5EVmM3aENJVEFCRFVpeGZMVTMvKzhQU2VMUGY1cGZjMmptVzUvVGNlcisvb2RQcy9CbUwzbG03ekk3ZXZuTXp5SEsvbkY5L1RPSmJsT0ljWEY4dFQvL2RvYmZONm54ZUtSQUJBWUY5N1pHcG5sck1UOXUvc0xOMzVwdFh6L2Q1KzRWSzU5dTJuNnBtdWVmRHh1NXJIRCs1cVp6cDQ3M0x2M2I5NjlxZmYyc3IwN3YvZXY1M2FtZlVzQnlnNkFRQ0JkYnFwOU9XSHA2L0xjcDlmZUUvemVKYlRHdjc4b2VrOVdWWUJwcXE5N2ovLzJlVkROMnpQZGdwZlNpbTlmZC9xd2orOWUvbElLY01HbmxzdTErOTlwTDR6NjNOQjBRa0FDTzViVDlhM256aGY2ZnY4OTMzYk9wZmVlMkQxYkwrM1AzbWhQUDAvdnorMUs4czJ6VTcxMnIvMUR4WWYvYms3K3pzbVlMclc2M3p5SnhyUGZlWm5sdzlWTTE3RytFOGVtTjdyRXNCRTVEUkFDSzdYZStsZCtxOTllUGx3di9mNStMc2J4eDk4cXJhMTMyc2MvTm1EMDN2dTJOZGUyTHUxL3l2ejFTcXArdy9mMHp6Mm9kdGFweDU4cXJiMXU4L1V0cHhlTE5jWGxrdjFjam4xdHN6MlZuZHQ2alR2dW5IMTNMdHZXajJmNVRQL2x6MzhkRzNMTncvVnQyZTlIMHdDQVFDa0I1K3FiWDMyVEdWRHY4dnV1N2QwbSs5L2Mrdk1mWS9YZC9Seis5Vk9xZnpacjIwNDhHOCt0dlJvMWkvbzJUcmJiWDNrOXBXVGd6ZzQ4SEluTDVTbmYvL3JHMjRjNUdOQ2tWajJBbEl2cGZTbGg3S2RFZkN4ZHpWUFpGbHVQM2F1TXZNNy8yUDI0R3BuL0g5M0xqUkt0ZC82NzNNM0YrVjdHV0FZeHY2TENPVERkNStwYlhrcXc0VjdkbXpzcnZ6VUxkbk90WC8wUkhYamIzOTE3dVpCWGUxdkxWNjhXSjc2VjErWnY2V0kzODBBZ3lRQWdGZDg2YUdaVEtzQVAzL255b2w2dGRmTmNwOUhqMWMzL3N1dnpOMlM1Y0REUVhuc1JIWGp2L2pLM0Z1elhOSVlKcFVBQUY3eC9hUFZUWTgvWDUzdjkvWmJacnVySDdxdGRTcnI4eHc5Vzlud21TL04zZnExUjZaMmp1TExrbFpXUytVdlBqQnovVy84eGR4YnppK1hhOE4rUGlnQ0FRQzh5cDg5T0wwM3krMC8rczdtOHpNWkQreExLYVdWZHFuOGg5K2N1ZUhYLzNUK3RvZU85SDlHUVJhdGRxbjhseitvWC9QUC9uaitqdi8ydmFsclhld0hmbWpnQjhCY1dsb29iWmpiN05jTUN1cng1NnZ6anh5cmJucmIzdmFGZm00L1A5MXJmK1QybFpOZitVNjJDd3E5N1BpNXlzeS8rMSt6QjdiUGQxcy9lVXZyOUYwM3JwN2J1NjMvMHdWZnE5ZEw2Y21UMWZtSGp0UzJmT09KK280bEIvb3hJUzR0TFF3MGtvZXk5Q1lBZ1BYWU1kOWRPYmlydlhUak5aM2wzVnU2amUxejNkYm0yZTdxVkRWMTY5VmV0OWQ3NmQxOWM3VlVPYmRjcXAxWkxFOGRQMWVaZWZwMFpmYlF5ZXJjeFViSk1qOFRSd0FBUUVDRERnREhBQUJBUUFJQUFBSVNBQUFRa0FBQWdJQUVBQUFFTkpRQUdQU1JpZ0FRMlREbXFoVUFBQWhJQUFCQVFBSUFBQUlTQUFBUTBOQUN3SUdBQUxCK3c1cW5WZ0FBSUNBQkFBQUJDUUFBQ0dpb0FlQTRBQUJZdTJIT1VTc0FBQkNRQUFDQWdBUUFBQVEwOUFCd0hBQUFaRGZzK1drRkFBQUNFZ0FBRU5CSUFzREhBQURRdjFITVRTc0FBQkNRQUFDQWdFWVdBRDRHQUlDckc5Vzh0QUlBQUFFSkFBQUlhS1FCNEdNQUFMaXlVYzVKS3dBQUVORElBOEFxQUFEOHFGSFBSeXNBQUJDUUFBQ0FnTVlTQUQ0R0FJQWZHc2RjdEFJQUFBR05MUUNzQWdEQStPYWhGUUFBQ0dpc0FXQVZBSURJeGprSHJRQUFRRUJqRHdDckFBQkVOTzc1Ti9ZQUFBQkdMeGNCTU80S0FvQlJ5c1BjeTBVQUFBQ2psWnNBeUVNTkFjQ3c1V1hlNVNZQVVzclBUZ0dBWWNqVG5NdFZBQUFBbzVHN0FNaFRIUUhBb09SdHZ1VXVBQUNBNGN0bEFPU3RrZ0JnUGZJNDEzSVpBQ25sYzJjQlFGWjVuV2U1RFFBQVlIaHlIUUI1clNZQTZFZWU1MWl1QXlDbGZPODhBTGlTdk0rdjNBZEFTdm5maVFCd3VTTE1yVUlFQUFBd1dJVUpnQ0xVRkFBVVpWNFZKZ0JTS3M1T0JTQ21JczJwUWdWQVNzWGF1UURFVWJUNVZMZ0FBQURXcjVBQlVMVEtBbUN5RlhFdUZUSUFVaXJtemdaZzhoUjFIaFUyQUZJcTdrNEhZRElVZVE0Vk9nQlNLdmJPQjZDNGlqNS9DaDhBS1JYL1JRQ2dXQ1poN2t4RUFLUTBHUzhHQVBrM0tmTm1ZZ0lncGNsNVVRRElwMG1hTXhNVkFDbE4xb3NEUUg1TTJueVp1QUJJYWZKZUpBREdheExueWtRR1FFcVQrV0lCTUhxVE9rOG1OZ0JTbXR3WERZRFJtT1E1TXRFQmtOSmt2M2dBRE0ra3o0K0pENENVSnY5RkJHQ3dJc3lORUFHUVVvd1hFNEQxaXpJdndnUkFTbkZlVkFEV0p0S2NDQlVBS2NWNmNRSG9YN1Q1RU9wLzlyVTJ6RzN1alhzYkFCaXZhSVAvWmVGV0FDNFg5VVVINENXUjUwRG9BRWdwOW9zUEVGbjB2LytoLytkZnkwY0NBSk12K3VCL1dmZ1ZnTXY1b1FDWWJQN08vNUFBZUEwL0hBQ1R5ZC8zVjdNejNvQ1BCQUNLeitCL2ZWWUEzb0FmR29CaTgzZjh5dXlZUGxrTkFDZ09nLy9xN0tDTWhBQkFmaG44L2ZNUlFFWit1QUR5eWQvbmJPeXNkYkFhQURCK0J2L2EyR2tESUFRQVJzL2dYeDg3YjRDRUFNRHdHZnlEWVNjT2dSQUFHRHlEZjdEc3pDRVNBZ0RyWi9BUGg1MDZJbUlBb0grRy92RFp3U01tQkFDdXpPQWZIVHQ2ak1RQWdLRS9Mblo2VG9nQklCSkRmL3k4QURra0JvQkpaT2puaXhlakFBUUJVRVFHZnI1NWNRcElFQUI1Wk9BWGl4ZHJRb2dDWUpRTSsrTHpBZ1loRUlBc0RIZ0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFZRUw4UDg4NUVaNGtTcGNxQUFBQUFFbEZUa1N1UW1DQyIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIn0sIHsic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTUFBQUFEQUNBWUFBQUJTM0d3SEFBQUpjRWxFUVZSNG5PM2RTMndVOXgzQThkL3NlNzNydC96QXhuSWhJTUFWWUlrMFVWRGRFQzVGaFV1a25Fb1VGRVZxVDcwa1VsUlZhdFdjMmt0UjJxb1Nsd3JsMHFRTkZVclZFS0trcUNwVmdvSjRSa0FnRHpBT3hzUVk0N1c5ejNuMFFCMTJ6WHFmWSsrdWY5L1BiV2ZYNDRYOHZ2T2ZtVjBGRVFBQUFBQUFBQUJZMVl4eVh1ejhXWnpsZWlPQW00eVhTcHZ0a2w3RTRLTlJGUXZCVTJ3SEREOGFXYkg1TFJvQXNKb1ZESUNqUDFhRFFuUE1DZ0RWQ0FDcUVRQlVLeGhBcWZkU2dYcFdhSTVaQWFCYTBRQllCZERJaXMwdlg0WEFxdVRxVnlISzBSUnRJeElzcS9qY2ZkZm0xdFZyQUlZZks4SE5PWE10QUlZZks4bXRlWE1sQUlZZnRlREczRlVkQU1PUFdxcDIvcW9LZ09GSFBhaG1EdmtnREtwVkhBQkhmOVNUU3VleG9nQVlmdFNqU3VhU1V5Q29WbllBSFAxUno4cWRUMVlBcUZaV0FCejkwUWpLbVZOV0FLaFdjZ0FjL2RGSVNwMVhWZ0NvVmxJQUhQM1JpRXFaVzFZQXFFWUFVSzFvQUp6K29KRVZtMTlXQUtoR0FGQ05BS0FhQVVDMWdnRndBWXpWb05BY3N3SkFOUUtBYWdRQTFRZ0FxaEVBVkNNQXFFWUFVSTBBb0JvQlFEVUNnR29FQU5VSUFLb1JBRlFqQUtoR0FGQ05BS0FhQVVBMUFvQnFCQURWQ0FDcUVRQlVJd0NvUmdCUWpRQ2dHZ0ZBTlFLQWFnUUExUWdBcWhFQVZDTUFxRVlBVUkwQW9Cb0JRRFZmcmQ5QU1RZWZTOGhQUjFLMWZodkxidVIzelhMMnBuZko1L3ZiYkxuMldxeXEzOUgzODFhWlNSaFY3V08xWVFXQWFnUUExUWdBcWhFQVZDTUFxRVlBVUkwQW9Cb0JRRFVDZ0dvRUFOVUlBS3JWL1hlQlhqNFNscGVQaEYzZDUvR2Z6Y25JQnJQaW4zL2xTRmdPblF5NitJNVFLNndBVUkwQW9Cb0JRRFVDZ0dvRUFOVUlBS29SQUZRakFLaEdBRkNOQUtBYUFVQTFBb0JxQkFEVkNBQ3FFUUJVSXdDb1JnQlFqUUNnR2dGQU5RS0FhZ1FBMVFnQXFoRUFWQ01BcUVZQVVJMEFvQm9CUURVQ2dHb0VBTlVJQUtvUkFGUWpBS2hHQUZDTkFLQWFBVUExQW9CcUJBRFZDQUNxMWYwL2t3cjNqUDkyWmtWLzN5L2VDY3Z2VDlUM1B5ZkxDZ0RWQ0FDcWNRcFV3TCt1eTdta0tlbkYyM2R2VDhpdWJRbGpQbVY0YjAxN3crZEhmYTBmWGdwMnh4S0dmL0ZyRDcwWU85Y1JzUi9aaDRoSTJqUThjeW5EZCt1ZUozeDIxTjkyNG5LZ0s1RTJ2TVhlVnp3anFiR1lUTjVMU0d3K0xjbU1MYWJIRUUvUUsvN1drRVI2SXRLK0ppb2RoaUZHWlg5eVBRaWdRaDVEbk9hUVkyNWVZODV1WG1QTzdoMU9UYnorZm1URHAyTysxbEwzRWZBNWRvZlBTWGRFN1BUV0FYTm0zM0RxOXErUFJyZmNtZkdFOHIzZWNjUzVjbGR1M3BpUk80NGpUdlp6dGlPV2FZczFuNUhrK0t4TVhmVkxjTGhYTnJTSEpGcnRuM1UxNHhUSUpjMGh4M3gxNy95MXJoWTdWZWsrT3FOMitxV25FNlA1bnZNWTRwd2VsNnZYNzh2RTR1SFBKNTZSMUttdjVmSTM4M0svMHZlakFTdEFHWWE2WkhCZG0vUytjaVFzZnozcnorelpscDU0ZGtkeWZPSDVvTSt4OTIxUFRSdytHUjVjYWg5dm5Bd1B2bnNoMk92M2l0M1hiaVYvc2l0eGZXT3ZPYmZ3L0xhQnpJemZLM2JHeWowNC9XZzQ5ZlZrWEhKdTQzUkhwRzFqaDZ4dENVcll0TVc2TXlmVG4wM0pXTm9TVTBURWRzUTVOeUZmL0dCUXRvVjlFbkR2YjJMMVlBV28wUFM4eC8vbXg2R0JLK08rNXV6dFcvck5XQ2svbjdIRU0zclgyL1QySjhIKzdPMGVRNXlRMzdHenQ3VTEyWm1uTjZjbXNyZDFSNlR0OFQ3WjFCYVNpTWNRVDhBci9vRlc2WDZ5WDdaNHNzNzlUVnVzTCsvSnJmTC9oRG9RUUpYRzdubWJzaDgzaHh5em5KODNGbDJtSnRLR2R6WnA1S3pNVDIzTVRQbThraFBGVUpjTTVydkNiUWxLMDlvVzZjcmVkbXRXcGh3cGZ0cWtFUUZVYWFERGltYy9Yank4Uy9GN3hSN3N0T0xQUFpITU9UcWZ1QkxvV3Z6YW9UNXpOdnR4YzBEQ0ViL2t2VkFXRWVtTlNrZjJZOU1XSzVhUytGS3YxNHhyZ0FxMVIrek1ubTNwaVMyTGh2UEt1SytsME04ZEdFbU1IaGpKZjZGNytpdC8rNXNmaHdZV2IrK001dDVHalFZa1hPaDNSUFBFa2NoSXVqVW9rVUkvcHhFQmxPSHlwSXhlbnBUUjNkc1RzbnQ3NHBIblU2YmhlZmQ4c0xmYy9Ub2k4cGVQd2dQdm5BMzI1WHMrSEJBcis3SFhJd1UvSzhqM3ZHbm43Z01QcUF4Z3p4OUx1elYrNk1XWWRFVHM0aThVa2ZtVTRYdjkvY2lHYjJLZXNyLzhZb2pJL3AySk1VZkUrTWZaNEpyRnp5ZlN1UVA5OWxtL3RmUDQwZ2Z6cmhiYit0TUx1ZGZpengrT2VFOS85Y2puZE9xcERNQU50aU5HL1ArZkJGKzQ2V3Y5NEZLd2V5Yis2Q2ZCaTcxeE1qeDQ3R0t3dDZmRlRoNFlTWXp1K0U3bS9zSnorNTlLM0x4NjJ4dTllanYzenRMVW5DZXdvZWZoQWJ5LzNVNFcraDE5Ylk4K1B6WG40VFpvSGdSUWhvVjcrTlh1eDNGRUptWThvWVB2UlRZZS9ISHMwNTdXQndOckdDTFA3MHlPL2ZMdjBhSHMxMThlOXpVLytWam0zc0xqZ1U0cjN0TnFKNWY2eFBpSjlROWZLL0xnenRLTnlkeTdWWGlBdTBBMWxMSEU4N2RQUWptZkEyeGFZODR1dnJBKzlZVy9NMk1aMy82M01rVGtoZThuYnVhN0RUcllhY1YzYlVuZHpkNzIzMnYrVHR2aGUwSDVFRUNOZmZSNW9IUHg2Y20rNGRUdDdNZlQ4eDcvc1F1Qm51eHQzMXVYbVg1MTcveTE5ZDNXdk44cmRuUElNWjhaU2svKzZ0bTVLLzZzend3U2FjTjc5RXh1WkhpSVU2QWFzMnd4amw4TTl1emZtUmhiMlBiNHVzeDBiNnVkbk1nNnhYbnJWSGhnZlpjVjN6cGdmdnQxaUIzck10TTcxbVdtQyszN0R4ODBQWFozbHZQL3BiQUMxSUVQTHdXNlU1bXNVeHhEWk85dzdsY2ZMRnVNMy93enV1bTlpOEhlVWs1bkptT2U0R3RIbzF2T1hQZTNMOGQ3WGkxWUFlckFmTXJ3L2Z1elFOY1B0NmJ1TEd6YnRUazkrZGFwME5yNTFNTlBsazFMak1QL0NROGVPeC9zZldZb1BmbmRmalBXMjJvbG95SEhUSnVHSjVZMGZGL2U4VWJQM1BDM2ZmUjVvTk95T2U4dnB1QmZVRk8wamUrUFlGV0l6OTNQTyt1Y0FrRzFnZ0VzVlEzUVNBck5NU3NBVkNNQXFFWUFVSTBBb0ZyUkFMZ1FSaU1yTnIrc0FGQ05BS0JhU1FGd0dvUkdWTXJjc2dKQXRaSURZQlZBSXlsMVhsa0JvRnBaQWJBS29CR1VNNmVzQUZDdDdBQllCVkRQeXAxUFZnQ29WbEVBckFLb1I1WE1aY1VyQUJHZ25sUTZqNXdDUWJXcUFtQVZRRDJvWmc2clhnR0lBTFZVN2Z5NWNncEVCS2dGTitiT3RXc0FJc0JLY212ZVhMMElKZ0tzQkRmbnpQVzdRRVNBNWVUMmZDM0xiVkFpd0hKWWpybGF0czhCaUFCdVdxNTVXdFlQd29nQWJsak9PVnF4QWVYL05JMXlyY1FCZE1XK0NzRnFnSEtzMUx6VVpDaFpEYkNVbFQ1UTF2U29UQWhZVUtzemhMbzRMU0VFdldwOWFsd1hBU3dnQkQxcVBmZ0w2dUpONUVNTXEwKzlESDIydW50RGhSQkY0NmpIWVFjQUFBQUFBSUJXL3dQeUh1Qk1BdFVTc0FBQUFBQkpSVTVFcmtKZ2dnPT0iLCAic2l6ZXMiOiAiMTkyeDE5MiIsICJ0eXBlIjogImltYWdlL3BuZyIsICJwdXJwb3NlIjogIm1hc2thYmxlIn1dfQ==">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,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">
+<script>
+// SW registration skipped for local file - app works fully offline via localStorage
+// Install prompt still works via manifest link above
+window.addEventListener('beforeinstallprompt', function(e) {
+  e.preventDefault();
+  window._installPrompt = e;
+  setTimeout(function() {
+    var banner = document.getElementById('install-banner');
+    if (banner && !localStorage.getItem('pwa-installed')) banner.classList.add('show');
+  }, 2000);
+});
+window.addEventListener('appinstalled', function() {
+  localStorage.setItem('pwa-installed','1');
+  var b = document.getElementById('install-banner');
+  if(b) b.classList.remove('show');
+});
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+
+<!-- PWA Meta -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="TacóLog">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="TacóLog PRO">
+<meta name="theme-color" content="#0a0c10">
+<meta name="msapplication-TileColor" content="#0a0c10">
+<meta name="msapplication-TileImage" content="icons/icon-144x144.png">
+<meta name="description" content="Registo de tempos de condução para motoristas de pesados. CE 561/2006.">
+
+<!-- Icons -->
+
+
+
+
+
+<title>TacóLog PRO</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0a0c10;
+  --surface: #111318;
+  --surface2: #181c24;
+  --surface3: #1e2330;
+  --border: #252c3a;
+  --border2: #2e3748;
+  --drive: #ff9d00;
+  --drive-glow: rgba(255,157,0,0.22);
+  --other: #00c2e0;
+  --other-glow: rgba(0,194,224,0.18);
+  --break: #00e676;
+  --break-glow: rgba(0,230,118,0.18);
+  --rest: #c653ff;
+  --rest-glow: rgba(198,83,255,0.18);
+  --danger: #ff3d3d;
+  --warn: #ffaa00;
+  --text: #dde4f0;
+  --muted: #3d4a60;
+  --muted2: #6b7a99;
+  --r: 10px;
+  --fd: 'Rajdhani', sans-serif;
+  --fm: 'Share Tech Mono', monospace;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bot: env(safe-area-inset-bottom, 0px);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+html { height: 100%; overflow: hidden; }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: var(--fm); font-size: 14px;
+  height: 100%; display: flex; flex-direction: column;
+  padding-top: var(--safe-top);
+  padding-bottom: var(--safe-bot);
+  overscroll-behavior: none;
+}
+
+/* ── INSTALL BANNER ───────────────────────────────── */
+#install-banner {
+  display: none;
+  background: linear-gradient(90deg, #1a1400, #1a0c00);
+  border-bottom: 1px solid var(--drive);
+  padding: 10px 14px;
+  font-size: 0.75rem;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+#install-banner.show { display: flex; }
+#install-banner .ib-text { flex: 1; color: var(--text); line-height: 1.4; }
+#install-banner .ib-text strong { color: var(--drive); display: block; }
+.ib-btn {
+  background: var(--drive); color: #000; border: none; border-radius: 6px;
+  padding: 7px 14px; font-family: var(--fd); font-weight: 700;
+  font-size: 0.8rem; letter-spacing: 1px; cursor: pointer; white-space: nowrap;
+}
+.ib-close {
+  background: none; border: none; color: var(--muted2); font-size: 1.2rem; cursor: pointer; padding: 2px 4px;
+}
+
+/* ── OFFLINE BANNER ───────────────────────────────── */
+#offline-banner {
+  display: none;
+  background: rgba(255,61,61,0.15);
+  border-bottom: 1px solid var(--danger);
+  padding: 6px 14px;
+  font-size: 0.7rem;
+  color: #ff8a8a;
+  text-align: center;
+  flex-shrink: 0;
+}
+#offline-banner.show { display: block; }
+
+/* ── TAB BAR ───────────────────────────────────────── */
+.tab-bar {
+  display: flex;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.tab-btn {
+  flex: 1; padding: 10px 2px 8px;
+  border: none; background: none;
+  color: var(--muted); font-family: var(--fd); font-weight: 600;
+  font-size: 0.65rem; letter-spacing: 1px; text-transform: uppercase;
+  cursor: pointer; transition: color .2s;
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  border-bottom: 2px solid transparent;
+}
+.tab-btn.active { color: var(--drive); border-bottom-color: var(--drive); }
+.tab-icon { font-size: 1.15rem; line-height: 1; }
+
+/* ── PAGES ─────────────────────────────────────────── */
+.pages { flex: 1; overflow: hidden; position: relative; }
+.page {
+  position: absolute; inset: 0;
+  overflow-y: auto; overflow-x: hidden;
+  display: none;
+  padding: 12px 13px 72px;
+  -webkit-overflow-scrolling: touch;
+}
+.page.active { display: block; }
+.page::-webkit-scrollbar { width: 2px; }
+.page::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+/* ── SECTION LABEL ─────────────────────────────────── */
+.sec {
+  font-family: var(--fd); font-weight: 600; font-size: 0.62rem;
+  letter-spacing: 2px; text-transform: uppercase; color: var(--muted2);
+  margin: 14px 0 7px;
+  display: flex; align-items: center; gap: 8px;
+}
+.sec::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+/* ── TOP ROW ───────────────────────────────────────── */
+.top-row {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 12px;
+}
+.app-title {
+  font-family: var(--fd); font-weight: 700; font-size: 1.25rem; letter-spacing: 2px;
+}
+.app-title em { color: var(--drive); font-style: normal; }
+#clock { font-size: 0.82rem; color: var(--drive); letter-spacing: 1px; }
+#date-line { font-size: 0.62rem; color: var(--muted2); text-align: right; }
+
+/* ── ELAPSED CARD ──────────────────────────────────── */
+.elapsed-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 13px 15px;
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 10px;
+}
+.el-label { font-size: 0.58rem; letter-spacing: 1.5px; color: var(--muted2); text-transform: uppercase; margin-bottom: 3px; }
+.el-type { font-family: var(--fd); font-weight: 700; font-size: 1rem; letter-spacing: 1px; }
+.el-sub { font-size: 0.62rem; color: var(--muted2); margin-top: 2px; }
+.el-timer { font-family: var(--fd); font-weight: 700; font-size: 2rem; letter-spacing: 2px; line-height: 1; }
+
+/* ── GPS PILL ──────────────────────────────────────── */
+.gps-pill {
+  display: inline-flex; align-items: center; gap: 5px; font-size: 0.6rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 20px; padding: 4px 10px; margin-bottom: 9px;
+  color: var(--muted2); max-width: 100%; overflow: hidden;
+}
+.gps-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--muted); flex-shrink: 0; }
+.gps-pill.ok .gps-dot { background: var(--break); box-shadow: 0 0 5px var(--break); }
+.gps-pill.ok { color: var(--text); }
+#gps-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ── ALERTS ────────────────────────────────────────── */
+.alerts { display: flex; flex-direction: column; gap: 5px; margin-bottom: 9px; }
+.alert {
+  border-radius: 7px; padding: 8px 11px; font-size: 0.7rem; letter-spacing: 0.3px;
+  border-left: 3px solid; display: flex; align-items: flex-start; gap: 6px;
+  line-height: 1.4; animation: fadeIn .3s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+.a-danger { background: rgba(255,61,61,0.1); border-color: var(--danger); color: #ff8a8a; }
+.a-warn   { background: rgba(255,170,0,0.1); border-color: var(--warn); color: #ffd060; }
+.a-ok     { background: rgba(0,230,118,0.08); border-color: var(--break); color: #80ffb4; }
+.a-info   { background: rgba(0,194,224,0.08); border-color: var(--other); color: #80e5f5; }
+
+/* ── ACTIVITY BUTTONS ──────────────────────────────── */
+.act-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-bottom: 4px; }
+.act-btn {
+  border: 1.5px solid var(--border2); border-radius: var(--r);
+  padding: 15px 8px 11px; cursor: pointer; background: var(--surface);
+  font-family: var(--fd); font-weight: 700; font-size: 0.95rem;
+  letter-spacing: 1px; text-transform: uppercase;
+  display: flex; flex-direction: column; align-items: center; gap: 5px;
+  transition: all .15s; -webkit-user-select: none; user-select: none;
+  position: relative; overflow: hidden;
+}
+.act-btn:active { transform: scale(0.97); }
+.act-icon { font-size: 1.75rem; line-height: 1; }
+.act-dur { font-size: 0.68rem; color: var(--muted2); font-family: var(--fm); font-weight: 400; letter-spacing: 0; }
+.act-btn.active .act-dur { color: inherit; opacity: 0.8; }
+
+.ab-drive { color: var(--drive); }
+.ab-drive.active { border-color: var(--drive); border-width: 2px; background: var(--drive-glow); box-shadow: 0 0 16px var(--drive-glow); }
+.ab-other { color: var(--other); }
+.ab-other.active { border-color: var(--other); border-width: 2px; background: var(--other-glow); box-shadow: 0 0 16px var(--other-glow); }
+.ab-break { color: var(--break); }
+.ab-break.active { border-color: var(--break); border-width: 2px; background: var(--break-glow); box-shadow: 0 0 16px var(--break-glow); }
+.ab-rest { color: var(--rest); }
+.ab-rest.active { border-color: var(--rest); border-width: 2px; background: var(--rest-glow); box-shadow: 0 0 16px var(--rest-glow); }
+
+/* ── LIVE PULSE on active button ────────────────────── */
+.act-btn.active::after {
+  content: '';
+  position: absolute; top: 8px; right: 8px;
+  width: 7px; height: 7px; border-radius: 50%;
+  background: currentColor;
+  animation: livepulse 1.2s infinite;
+}
+@keyframes livepulse {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.3; transform: scale(0.6); }
+}
+
+/* ── GAUGES ────────────────────────────────────────── */
+.gauges { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 4px; }
+.gauge {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 11px 11px 9px;
+}
+.g-lbl { font-size: 0.56rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted2); margin-bottom: 4px; }
+.g-val { font-family: var(--fd); font-weight: 700; font-size: 1.5rem; line-height: 1; margin-bottom: 5px; }
+.g-bar { height: 3px; background: var(--border2); border-radius: 2px; overflow: hidden; margin-bottom: 3px; }
+.g-fill { height: 100%; border-radius: 2px; transition: width .5s ease, background .3s; }
+.g-sub { font-size: 0.55rem; color: var(--muted); line-height: 1.4; }
+
+/* ── TIMELINE ──────────────────────────────────────── */
+.tl-wrap {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r); overflow: hidden; margin-bottom: 4px;
+}
+.tl-head {
+  display: flex; justify-content: space-between;
+  padding: 7px 10px 3px; font-size: 0.55rem; color: var(--muted);
+}
+.tl-bar { height: 26px; display: flex; }
+.tl-seg { height: 100%; transition: flex .4s; }
+.tl-drive { background: rgba(255,157,0,0.55); }
+.tl-other { background: rgba(0,194,224,0.55); }
+.tl-break { background: rgba(0,230,118,0.55); }
+.tl-rest  { background: rgba(198,83,255,0.55); }
+.tl-idle  { background: transparent; }
+.tl-legend {
+  display: flex; gap: 10px; padding: 4px 10px 8px; flex-wrap: wrap;
+}
+.tl-leg-item { display: flex; align-items: center; gap: 4px; font-size: 0.58rem; color: var(--muted2); }
+.tl-leg-dot { width: 7px; height: 7px; border-radius: 2px; }
+
+/* ── LOG TABLE ─────────────────────────────────────── */
+.log-wrap {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r); overflow: hidden;
+}
+.log-wrap table { width: 100%; border-collapse: collapse; }
+.log-wrap th {
+  font-size: 0.56rem; letter-spacing: 1.2px; text-transform: uppercase;
+  color: var(--muted2); padding: 8px 9px; text-align: left;
+  border-bottom: 1px solid var(--border); background: var(--surface2);
+}
+.log-wrap td {
+  font-size: 0.7rem; padding: 8px 9px;
+  border-bottom: 1px solid rgba(37,44,58,0.5);
+  vertical-align: top;
+}
+.log-wrap tr:last-child td { border-bottom: none; }
+.badge { font-family: var(--fd); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.5px; }
+.bd-d { color: var(--drive); }
+.bd-o { color: var(--other); }
+.bd-b { color: var(--break); }
+.bd-r { color: var(--rest); }
+.empty-row td { text-align: center; padding: 24px; color: var(--muted); font-size: 0.72rem; }
+
+/* ── WEEK PAGE ─────────────────────────────────────── */
+.w-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 4px; }
+.w-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 13px 11px;
+}
+.w-card .wl { font-size: 0.56rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted2); margin-bottom: 3px; }
+.w-card .wv { font-family: var(--fd); font-weight: 700; font-size: 1.35rem; margin-bottom: 3px; }
+.w-card .ws { font-size: 0.58rem; color: var(--muted); }
+.day-row {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 11px 12px; margin-bottom: 6px;
+}
+.dr-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 7px; }
+.dr-date { font-family: var(--fd); font-weight: 600; font-size: 0.88rem; }
+.dr-total { font-family: var(--fd); font-weight: 700; font-size: 1rem; color: var(--drive); }
+.dr-tl { height: 13px; display: flex; border-radius: 3px; overflow: hidden; background: var(--border); }
+.dr-stats { display: flex; gap: 10px; margin-top: 6px; flex-wrap: wrap; }
+.dr-stat { font-size: 0.62rem; color: var(--muted2); }
+.dr-stat span { color: var(--text); }
+
+/* ── FORMS ─────────────────────────────────────────── */
+.fg { margin-bottom: 11px; }
+.fg label { display: block; font-size: 0.58rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted2); margin-bottom: 4px; }
+.fg input, .fg select, .fg textarea {
+  width: 100%; background: var(--surface2); border: 1px solid var(--border2);
+  border-radius: 6px; color: var(--text); font-family: var(--fm); font-size: 0.82rem;
+  padding: 10px 11px; outline: none; transition: border-color .2s;
+  -webkit-appearance: none; appearance: none;
+}
+.fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--drive); }
+.fg select option { background: var(--surface2); }
+.fr { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+.btn-save {
+  background: var(--drive); color: #000; border: none; border-radius: 7px;
+  padding: 13px; font-family: var(--fd); font-weight: 700; font-size: 1rem;
+  letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; width: 100%;
+  margin-top: 4px; transition: opacity .15s;
+}
+.btn-save:active { opacity: 0.8; }
+
+.info-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--r);
+  padding: 12px 13px; font-size: 0.7rem; line-height: 1.75; color: var(--muted2); margin-bottom: 8px;
+}
+.info-card strong { color: var(--text); }
+
+.loc-row {
+  display: flex; align-items: center; gap: 8px; background: var(--surface2);
+  border: 1px solid var(--border); border-radius: 6px; padding: 9px 11px;
+  font-size: 0.7rem; color: var(--muted2); margin-bottom: 11px;
+}
+.loc-d { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); flex-shrink: 0; }
+.loc-d.on { background: var(--break); box-shadow: 0 0 5px var(--break); }
+
+/* ── EXPORT ────────────────────────────────────────── */
+.exp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.exp-btn {
+  background: var(--surface); border: 1.5px solid var(--border2); border-radius: var(--r);
+  padding: 15px 8px; cursor: pointer; font-family: var(--fd); font-weight: 600;
+  font-size: 0.82rem; letter-spacing: 1px; text-transform: uppercase; color: var(--text);
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  transition: all .15s;
+}
+.exp-btn:active { background: var(--surface2); border-color: var(--drive); color: var(--drive); }
+.exp-icon { font-size: 1.5rem; }
+#report-preview {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--r);
+  padding: 13px; font-size: 0.65rem; line-height: 1.8; color: var(--muted2);
+  font-family: var(--fm); white-space: pre-wrap; max-height: 280px; overflow-y: auto;
+}
+
+/* ── MODAL SHEET ───────────────────────────────────── */
+.modal-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.82); z-index: 200;
+  display: none; align-items: flex-end; justify-content: center;
+}
+.modal-overlay.open { display: flex; }
+.modal-sheet {
+  background: var(--surface); border: 1px solid var(--border2);
+  border-radius: 16px 16px 0 0;
+  padding: 20px 18px calc(20px + var(--safe-bot));
+  width: 100%; max-width: 540px;
+  animation: sheetUp .22s ease;
+}
+@keyframes sheetUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.modal-handle { width: 34px; height: 4px; background: var(--border2); border-radius: 2px; margin: 0 auto 18px; }
+.modal-title { font-family: var(--fd); font-weight: 700; font-size: 1.15rem; letter-spacing: 1px; color: var(--drive); margin-bottom: 16px; }
+.modal-btns { display: flex; gap: 9px; margin-top: 14px; }
+.btn-ok {
+  background: var(--drive); color: #000; border: none; border-radius: 7px;
+  flex: 1; padding: 12px; font-family: var(--fd); font-weight: 700;
+  font-size: 0.95rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer;
+}
+.btn-cancel {
+  background: transparent; color: var(--muted2); border: 1px solid var(--border2);
+  border-radius: 7px; flex: 0 0 80px; padding: 12px; font-family: var(--fd); font-weight: 600;
+  font-size: 0.95rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer;
+}
+
+/* ── NOTIFICATION PERMISSION ────────────────────────── */
+#notif-card {
+  background: var(--drive-glow); border: 1px solid rgba(255,157,0,0.3);
+  border-radius: var(--r); padding: 12px 14px; margin-bottom: 10px;
+  font-size: 0.72rem; display: none; align-items: center; gap: 10px;
+}
+#notif-card.show { display: flex; }
+#notif-card .nc-text { flex: 1; color: var(--text); line-height: 1.4; }
+.nc-btn {
+  background: var(--drive); color: #000; border: none; border-radius: 5px;
+  padding: 6px 12px; font-family: var(--fd); font-weight: 700; font-size: 0.78rem;
+  letter-spacing: 1px; cursor: pointer; white-space: nowrap;
+}
+
+a#dl { display: none; }
+</style>
+</head>
+<body>
+
+<!-- INSTALL BANNER (shown on mobile before installation) -->
+<div id="install-banner">
+  <div class="ib-text">
+    <strong>📲 Instalar TacóLog PRO</strong>
+    Adicionar ao ecrã inicial para usar como app
+  </div>
+  <button class="ib-btn" onclick="installApp()">Instalar</button>
+  <button class="ib-close" onclick="dismissInstall()">✕</button>
+</div>
+
+<!-- OFFLINE BANNER -->
+<div id="offline-banner">⚡ Sem ligação — App a funcionar em modo offline</div>
+
+<!-- TAB BAR -->
+<div class="tab-bar">
+  <button class="tab-btn active" id="tab-hoje" onclick="goTab('hoje')">
+    <span class="tab-icon">🚛</span>Hoje
+  </button>
+  <button class="tab-btn" id="tab-semana" onclick="goTab('semana')">
+    <span class="tab-icon">📅</span>Semana
+  </button>
+  <button class="tab-btn" id="tab-viagem" onclick="goTab('viagem')">
+    <span class="tab-icon">🗺️</span>Viagem
+  </button>
+  <button class="tab-btn" id="tab-exportar" onclick="goTab('exportar')">
+    <span class="tab-icon">📤</span>Exportar
+  </button>
+  <button class="tab-btn" id="tab-veiculo" onclick="goTab('veiculo')">
+    <span class="tab-icon">⚙️</span>Config
+  </button>
+</div>
+
+<!-- PAGES -->
+<div class="pages">
+
+<!-- ════════ HOJE ════════ -->
+<div class="page active" id="page-hoje">
+  <div class="top-row">
+    <div class="app-title">Tacó<em>Log</em> <span style="font-size:.68rem;color:var(--muted2);font-weight:400">PRO</span></div>
+    <div style="text-align:right">
+      <div id="clock">00:00:00</div>
+      <div id="date-line">—</div>
+    </div>
+  </div>
+
+  <!-- Notif request card -->
+  <div id="notif-card">
+    <div class="nc-text"><strong>🔔 Activar alertas</strong><br>Recebe notificações mesmo com a app em segundo plano</div>
+    <button class="nc-btn" onclick="requestNotifPermission()">Activar</button>
+  </div>
+
+  <!-- GPS -->
+  <div class="gps-pill" id="gps-pill">
+    <div class="gps-dot" id="gps-dot"></div>
+    <span id="gps-text">A obter localização…</span>
+  </div>
+
+  <!-- Elapsed -->
+  <div class="elapsed-card">
+    <div>
+      <div class="el-label">Actividade actual</div>
+      <div class="el-type" id="el-type" style="color:var(--muted2)">— INATIVO —</div>
+      <div class="el-sub" id="el-sub"></div>
+    </div>
+    <div class="el-timer" id="el-timer" style="color:var(--muted2)">--:--</div>
+  </div>
+
+  <!-- Alerts -->
+  <div class="alerts" id="alerts"></div>
+
+  <!-- Buttons -->
+  <div class="sec">Actividade</div>
+  <div class="act-grid">
+    <button class="act-btn ab-drive" id="abtn-drive" onclick="startAct('drive')">
+      <span class="act-icon">🚛</span><span>Condução</span>
+      <span class="act-dur" id="adur-drive">0h 00m</span>
+    </button>
+    <button class="act-btn ab-other" id="abtn-other" onclick="startAct('other')">
+      <span class="act-icon">🔧</span><span>Outro Trabalho</span>
+      <span class="act-dur" id="adur-other">0h 00m</span>
+    </button>
+    <button class="act-btn ab-break" id="abtn-break" onclick="startAct('break')">
+      <span class="act-icon">☕</span><span>Pausa</span>
+      <span class="act-dur" id="adur-break">0h 00m</span>
+    </button>
+    <button class="act-btn ab-rest" id="abtn-rest" onclick="startAct('rest')">
+      <span class="act-icon">🛏️</span><span>Descanso</span>
+      <span class="act-dur" id="adur-rest">0h 00m</span>
+    </button>
+  </div>
+
+  <!-- Gauges -->
+  <div class="sec">Limites do dia</div>
+  <div class="gauges">
+    <div class="gauge">
+      <div class="g-lbl">Condução diária</div>
+      <div class="g-val" id="gv-d" style="color:var(--drive)">0h 00m</div>
+      <div class="g-bar"><div class="g-fill" id="gf-d" style="background:var(--drive);width:0%"></div></div>
+      <div class="g-sub">Limite 9h · ext.10h×2/sem</div>
+    </div>
+    <div class="gauge">
+      <div class="g-lbl">Condução contínua</div>
+      <div class="g-val" id="gv-c" style="color:var(--drive)">0h 00m</div>
+      <div class="g-bar"><div class="g-fill" id="gf-c" style="background:var(--drive);width:0%"></div></div>
+      <div class="g-sub">Máx. 4h30 sem pausa</div>
+    </div>
+    <div class="gauge">
+      <div class="g-lbl">Pausas acumuladas</div>
+      <div class="g-val" id="gv-b" style="color:var(--break)">0h 00m</div>
+      <div class="g-bar"><div class="g-fill" id="gf-b" style="background:var(--break);width:0%"></div></div>
+      <div class="g-sub">Mín. 45m após 4h30</div>
+    </div>
+    <div class="gauge">
+      <div class="g-lbl">Descanso diário</div>
+      <div class="g-val" id="gv-r" style="color:var(--rest)">0h 00m</div>
+      <div class="g-bar"><div class="g-fill" id="gf-r" style="background:var(--rest);width:0%"></div></div>
+      <div class="g-sub">Mín. 11h (red.9h×3/sem)</div>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <div class="sec">Linha de tempo</div>
+  <div class="tl-wrap">
+    <div class="tl-head"><span>00h</span><span>06h</span><span>12h</span><span>18h</span><span>24h</span></div>
+    <div class="tl-bar" id="tl"></div>
+    <div class="tl-legend">
+      <div class="tl-leg-item"><div class="tl-leg-dot" style="background:rgba(255,157,0,.6)"></div>Condução</div>
+      <div class="tl-leg-item"><div class="tl-leg-dot" style="background:rgba(0,194,224,.6)"></div>Outro</div>
+      <div class="tl-leg-item"><div class="tl-leg-dot" style="background:rgba(0,230,118,.6)"></div>Pausa</div>
+      <div class="tl-leg-item"><div class="tl-leg-dot" style="background:rgba(198,83,255,.6)"></div>Descanso</div>
+    </div>
+  </div>
+
+  <!-- Log -->
+  <div class="sec">Registo de hoje</div>
+  <div class="log-wrap">
+    <table>
+      <thead><tr><th>Tipo</th><th>Início</th><th>Dur.</th><th>Local / Nota</th></tr></thead>
+      <tbody id="log-body"><tr class="empty-row"><td colspan="4">Inicie uma actividade acima</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ════════ SEMANA ════════ -->
+<div class="page" id="page-semana">
+  <div class="top-row">
+    <div class="app-title" style="font-size:1.1rem">Controlo Semanal</div>
+    <div id="week-range" style="font-size:0.65rem;color:var(--muted2)"></div>
+  </div>
+  <div class="sec">Esta semana</div>
+  <div class="w-summary">
+    <div class="w-card">
+      <div class="wl">Condução semanal</div>
+      <div class="wv" id="ws-d" style="color:var(--drive)">0h</div>
+      <div class="ws">Máx. 56h/semana</div>
+      <div class="g-bar" style="margin-top:6px"><div class="g-fill" id="wsf-d" style="background:var(--drive);width:0%"></div></div>
+    </div>
+    <div class="w-card">
+      <div class="wl">Cond. 2 semanas</div>
+      <div class="wv" id="ws-bi" style="color:var(--warn)">0h</div>
+      <div class="ws">Máx. 90h em 14 dias</div>
+      <div class="g-bar" style="margin-top:6px"><div class="g-fill" id="wsf-bi" style="background:var(--warn);width:0%"></div></div>
+    </div>
+    <div class="w-card">
+      <div class="wl">Descansos ≥9h</div>
+      <div class="wv" id="ws-rest" style="color:var(--rest)">0/7</div>
+      <div class="ws">Mín. 1 descanso/dia</div>
+    </div>
+    <div class="w-card">
+      <div class="wl">Dias em trabalho</div>
+      <div class="wv" id="ws-days" style="color:var(--other)">0/7</div>
+      <div class="ws">Máx. 6 dias/semana</div>
+    </div>
+  </div>
+  <div class="sec">Dias da semana</div>
+  <div id="week-days"></div>
+  <div class="sec">Alerta bi-semanal</div>
+  <div class="info-card" id="biweek-card">A calcular…</div>
+</div>
+
+<!-- ════════ VIAGEM ════════ -->
+<div class="page" id="page-viagem">
+  <div class="top-row"><div class="app-title" style="font-size:1.1rem">Dados da Viagem</div></div>
+  <div class="sec">Viagem actual</div>
+  <div class="fg">
+    <label>Número da viagem / serviço</label>
+    <input type="text" id="vt-num" placeholder="Ex: VG-2024-0042" maxlength="30">
+  </div>
+  <div class="fr">
+    <div class="fg"><label>País de origem</label><input type="text" id="vt-orig" placeholder="Ex: Portugal" list="clist"></div>
+    <div class="fg"><label>País de destino</label><input type="text" id="vt-dest" placeholder="Ex: Alemanha" list="clist"></div>
+  </div>
+  <div class="fr">
+    <div class="fg"><label>KM inicial</label><input type="number" id="vt-kms" placeholder="000000"></div>
+    <div class="fg"><label>KM actual</label><input type="number" id="vt-kmn" placeholder="000000"></div>
+  </div>
+  <div class="fg">
+    <label>Localização GPS actual</label>
+    <div class="loc-row"><div class="loc-d" id="vt-locd"></div><span id="vt-loctxt">Sem sinal GPS</span></div>
+  </div>
+  <button class="btn-save" onclick="saveTripData()">💾 Guardar viagem</button>
+  <div class="sec">Cruzamentos de fronteiras</div>
+  <div id="border-log"><div style="text-align:center;padding:18px;color:var(--muted);font-size:0.72rem">Sem cruzamentos registados</div></div>
+  <datalist id="clist">
+    <option value="Portugal"><option value="Espanha"><option value="França"><option value="Alemanha">
+    <option value="Itália"><option value="Bélgica"><option value="Holanda"><option value="Luxemburgo">
+    <option value="Suíça"><option value="Áustria"><option value="Rep. Checa"><option value="Polónia">
+    <option value="Hungria"><option value="Roménia"><option value="Bulgária"><option value="Grécia">
+    <option value="Croácia"><option value="Eslovénia"><option value="Eslováquia"><option value="Reino Unido">
+    <option value="Irlanda"><option value="Dinamarca"><option value="Suécia"><option value="Noruega">
+  </datalist>
+</div>
+
+<!-- ════════ EXPORTAR ════════ -->
+<div class="page" id="page-exportar">
+  <div class="top-row"><div class="app-title" style="font-size:1.1rem">Exportar Dados</div></div>
+  <div class="sec">Exportar</div>
+  <div class="exp-grid">
+    <button class="exp-btn" onclick="doExport('csv','day')"><span class="exp-icon">📊</span>CSV — Hoje</button>
+    <button class="exp-btn" onclick="doExport('csv','week')"><span class="exp-icon">📋</span>CSV — Semana</button>
+    <button class="exp-btn" onclick="doExport('txt','day')"><span class="exp-icon">📄</span>TXT — Hoje</button>
+    <button class="exp-btn" onclick="doExport('txt','week')"><span class="exp-icon">📝</span>TXT — Semana</button>
+    <button class="exp-btn" onclick="doEmail()"><span class="exp-icon">✉️</span>Email</button>
+    <button class="exp-btn" onclick="doShare()"><span class="exp-icon">📱</span>Partilhar</button>
+  </div>
+  <div class="sec">Pré-visualização</div>
+  <div id="report-preview">Carregando…</div>
+  <div style="margin-top:12px">
+    <button class="btn-save" style="background:transparent;color:var(--danger);border:1px solid var(--danger)"
+      onclick="clearAll()">🗑️ Apagar todos os dados</button>
+  </div>
+</div>
+
+<!-- ════════ CONFIG / VEÍCULO ════════ -->
+<div class="page" id="page-veiculo">
+  <div class="top-row"><div class="app-title" style="font-size:1.1rem">Configuração</div></div>
+  <div class="sec">Veículo</div>
+  <div class="fr">
+    <div class="fg"><label>Matrícula (tractor)</label><input type="text" id="v-pl" placeholder="00-AA-00" style="text-transform:uppercase"></div>
+    <div class="fg"><label>Matrícula reboque</label><input type="text" id="v-tr" placeholder="00-AA-00" style="text-transform:uppercase"></div>
+  </div>
+  <div class="fr">
+    <div class="fg"><label>Marca / Modelo</label><input type="text" id="v-mo" placeholder="Ex: Volvo FH 500"></div>
+    <div class="fg"><label>Nº tacógrafo</label><input type="text" id="v-ta" placeholder="T-00000"></div>
+  </div>
+  <div class="sec">Motorista</div>
+  <div class="fr">
+    <div class="fg"><label>Nome completo</label><input type="text" id="d-na" placeholder="Nome"></div>
+    <div class="fg"><label>Nº carta condução</label><input type="text" id="d-li" placeholder="00000000"></div>
+  </div>
+  <div class="fr">
+    <div class="fg"><label>Empresa</label><input type="text" id="d-co" placeholder="Empresa"></div>
+    <div class="fg"><label>Cartão tacógrafo</label><input type="text" id="d-ca" placeholder="PT000000000"></div>
+  </div>
+  <button class="btn-save" onclick="saveVehicle()">💾 Guardar configuração</button>
+
+  <div class="sec">Regulamento CE 561/2006</div>
+  <div class="info-card">
+    🚛 <strong>Condução diária:</strong> máx. 9h (ext. 10h × 2/sem)<br>
+    🔄 <strong>Condução contínua:</strong> máx. 4h30 → pausa 45min<br>
+    📅 <strong>Condução semanal:</strong> máx. 56h<br>
+    📆 <strong>Condução bi-semanal:</strong> máx. 90h<br>
+    🛏️ <strong>Descanso diário:</strong> mín. 11h (red. 9h × 3/sem)<br>
+    🏖️ <strong>Descanso semanal:</strong> mín. 45h consecutivas
+  </div>
+
+  <div class="sec">Sobre a app</div>
+  <div class="info-card" style="text-align:center">
+    <strong>TacóLog PRO v2.0</strong><br>
+    App instalável (PWA) · Funciona offline<br>
+    Dados guardados localmente no telemóvel<br>
+    <span style="color:var(--muted)">© 2024 — Todos os direitos reservados</span>
+  </div>
+</div>
+
+</div><!-- /pages -->
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title" id="modal-title">🚛 Iniciar Condução</div>
+    <div class="loc-row">
+      <div class="loc-d" id="m-locd"></div>
+      <span id="m-loctxt">A obter GPS…</span>
+    </div>
+    <div class="fg">
+      <label>País / Local</label>
+      <input type="text" id="m-country" placeholder="Ex: França — A31" list="clist">
+    </div>
+    <div class="fg">
+      <label>Motivo</label>
+      <select id="m-reason">
+        <option value="">— Motivo (opcional) —</option>
+        <option>Carga</option><option>Descarga</option>
+        <option>Abastecimento</option><option>Fiscalização</option>
+        <option>Manutenção</option><option>Refeição</option>
+        <option>Fronteira</option><option>Paragem espontânea</option><option>Outro</option>
+      </select>
+    </div>
+    <div class="fg">
+      <label>Nota</label>
+      <input type="text" id="m-note" placeholder="Observação…">
+    </div>
+    <div class="modal-btns">
+      <button class="btn-cancel" onclick="closeModal()">Cancelar</button>
+      <button class="btn-ok" id="m-ok" onclick="confirmAct()">Confirmar</button>
+    </div>
+  </div>
+</div>
+
+<a id="dl"></a>
+
+<script>
+
+function showUpdateBanner() {
+  if (confirm('Nova versão disponível! Atualizar agora?')) location.reload();
+}
+
+// ══════════════════════════════════════════════════════
+// INSTALL PROMPT
+// ══════════════════════════════════════════════════════
+let deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPrompt = e;
+  // Show banner after 3s
+  setTimeout(() => {
+    if (!localStorage.getItem('pwa-installed') && !localStorage.getItem('pwa-dismissed')) {
+      document.getElementById('install-banner').classList.add('show');
+    }
+  }, 3000);
+});
+
+window.addEventListener('appinstalled', () => {
+  localStorage.setItem('pwa-installed', '1');
+  document.getElementById('install-banner').classList.remove('show');
+  deferredPrompt = null;
+});
+
+// iOS Safari install hint
+function checkIOSInstall() {
+  const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  const isStandalone = window.navigator.standalone;
+  if (isIOS && !isStandalone && !localStorage.getItem('ios-hint-shown')) {
+    setTimeout(() => {
+      alert('📲 Para instalar no iPhone:\nToque em "Partilhar" → "Adicionar ao ecrã principal"');
+      localStorage.setItem('ios-hint-shown', '1');
+    }, 4000);
+  }
+}
+checkIOSInstall();
+
+function installApp() {
+  var prompt = window._installPrompt || deferredPrompt;
+  if (prompt) {
+    prompt.prompt();
+    prompt.userChoice.then(function(r) {
+      if (r.outcome === 'accepted') localStorage.setItem('pwa-installed', '1');
+      window._installPrompt = null; deferredPrompt = null;
+    });
+  } else {
+    // iOS Safari fallback
+    alert('Para instalar:\niOS: botão Partilhar → "Adicionar ao Ecrã Principal"\nAndroid: Menu ⋮ → "Adicionar ao ecrã principal"');
+  }
+  document.getElementById('install-banner').classList.remove('show');
+}
+
+function dismissInstall() {
+  localStorage.setItem('pwa-dismissed', '1');
+  document.getElementById('install-banner').classList.remove('show');
+}
+
+// ══════════════════════════════════════════════════════
+// OFFLINE DETECTION
+// ══════════════════════════════════════════════════════
+function updateOnlineStatus() {
+  document.getElementById('offline-banner').classList.toggle('show', !navigator.onLine);
+}
+window.addEventListener('online', updateOnlineStatus);
+window.addEventListener('offline', updateOnlineStatus);
+updateOnlineStatus();
+
+// ══════════════════════════════════════════════════════
+// NOTIFICATIONS
+// ══════════════════════════════════════════════════════
+function checkNotifPermission() {
+  if (!('Notification' in window)) return;
+  if (Notification.permission === 'default') {
+    document.getElementById('notif-card').classList.add('show');
+  }
+}
+
+function requestNotifPermission() {
+  Notification.requestPermission().then(p => {
+    document.getElementById('notif-card').classList.remove('show');
+  });
+}
+
+function sendNotif(title, body, urgent = false) {
+  if (Notification.permission !== 'granted') return;
+  const opts = {
+    body,
+    icon: 'icons/icon-192x192.png',
+    badge: 'icons/icon-96x96.png',
+    vibrate: urgent ? [300,100,300,100,300] : [200,100,200],
+    tag: 'tacolog',
+    renotify: true,
+    silent: false
+  };
+  if (navigator.serviceWorker.controller) {
+    navigator.serviceWorker.controller.postMessage({ type: 'notify', title, ...opts });
+  }
+  try { new Notification(title, opts); } catch(e) {}
+}
+
+// ══════════════════════════════════════════════════════
+// STATE
+// ══════════════════════════════════════════════════════
+const T = {
+  drive: { label:'Condução',      icon:'🚛', color:'var(--drive)', bc:'bd-d', tl:'tl-drive' },
+  other: { label:'Outro Trabalho',icon:'🔧', color:'var(--other)', bc:'bd-o', tl:'tl-other' },
+  break: { label:'Pausa',         icon:'☕', color:'var(--break)', bc:'bd-b', tl:'tl-break' },
+  rest:  { label:'Descanso',      icon:'🛏️', color:'var(--rest)',  bc:'bd-r', tl:'tl-rest'  },
+};
+
+function blankState() {
+  return { cur:null, ts:null, entries:[], day:today(), v:{}, d:{}, trip:{}, borders:[], days:{}, curCountry:'', curReason:'', curNote:'' };
+}
+
+function loadS() {
+  try {
+    let s = JSON.parse(localStorage.getItem('tl3') || 'null');
+    if (!s) return blankState();
+    if (s.day !== today()) {
+      s.days = s.days || {};
+      s.days[s.day] = { entries: s.entries, trip: Object.assign({}, s.trip) };
+      s.entries = []; s.cur = null; s.ts = null; s.day = today();
+    }
+    return s;
+  } catch(e) { return blankState(); }
+}
+
+let S = loadS();
+function sv() { localStorage.setItem('tl3', JSON.stringify(S)); }
+function today() { return new Date().toISOString().slice(0,10); }
+
+// ══════════════════════════════════════════════════════
+// GPS
+// ══════════════════════════════════════════════════════
+let gpsPos = null, gpsStr = '';
+
+function initGPS() {
+  if (!navigator.geolocation) { setGPS(false,'GPS indisponível'); return; }
+  navigator.geolocation.watchPosition(pos => {
+    gpsPos = pos.coords;
+    gpsStr = `${pos.coords.latitude.toFixed(3)}°N ${pos.coords.longitude.toFixed(3)}°E`;
+    setGPS(true, gpsStr);
+    reverseGeo(pos.coords.latitude, pos.coords.longitude);
+  }, () => setGPS(false,'Sem sinal GPS'), { enableHighAccuracy:true, timeout:12000, maximumAge:60000 });
+}
+
+async function reverseGeo(lat, lon) {
+  try {
+    const r = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json&accept-language=pt`);
+    const d = await r.json();
+    const country = d.address?.country || '';
+    const place = d.address?.road || d.address?.town || d.address?.city || d.address?.county || '';
+    gpsStr = country + (place ? ` — ${place}` : '');
+    setGPS(true, gpsStr);
+    // Auto-detect border crossings
+    checkBorderCrossing(country);
+  } catch(e) {}
+}
+
+let lastKnownCountry = '';
+function checkBorderCrossing(country) {
+  if (!country) return;
+  const c = country.split('—')[0].trim();
+  if (lastKnownCountry && lastKnownCountry !== c && S.cur) {
+    S.borders = S.borders || [];
+    S.borders.push({ ts: Date.now(), from: lastKnownCountry, to: c });
+    sv();
+  }
+  lastKnownCountry = c;
+}
+
+function setGPS(ok, txt) {
+  const pill = document.getElementById('gps-pill');
+  pill.className = 'gps-pill' + (ok ? ' ok' : '');
+  document.getElementById('gps-text').textContent = txt;
+  // Update modal
+  const md = document.getElementById('m-locd');
+  const mt = document.getElementById('m-loctxt');
+  if(md) { md.className = 'loc-d' + (ok?' on':''); }
+  if(mt) { mt.textContent = ok ? txt : 'Sem sinal GPS'; }
+  // Update trip page
+  const vd = document.getElementById('vt-locd');
+  const vt = document.getElementById('vt-loctxt');
+  if(vd) { vd.className = 'loc-d'+(ok?' on':''); }
+  if(vt) { vt.textContent = ok ? txt : 'Sem sinal GPS'; }
+}
+
+// ══════════════════════════════════════════════════════
+// CLOCK
+// ══════════════════════════════════════════════════════
+function tick() {
+  const n = new Date();
+  document.getElementById('clock').textContent = n.toTimeString().slice(0,8);
+  document.getElementById('date-line').textContent = n.toLocaleDateString('pt-PT',{weekday:'short',day:'2-digit',month:'short'});
+  updateElapsed();
+  if (n.getSeconds() % 15 === 0) { renderGauges(); renderTL(); renderAlerts(); renderBtnDur(); }
+}
+setInterval(tick, 1000); tick();
+
+// ══════════════════════════════════════════════════════
+// AUDIO
+// ══════════════════════════════════════════════════════
+let aCtx = null;
+function beep(freq=440, dur=0.3, vol=0.2, type='sine') {
+  try {
+    if (!aCtx) aCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (aCtx.state === 'suspended') aCtx.resume();
+    const osc = aCtx.createOscillator(), g = aCtx.createGain();
+    osc.connect(g); g.connect(aCtx.destination);
+    osc.frequency.value = freq; osc.type = type;
+    g.gain.setValueAtTime(vol, aCtx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, aCtx.currentTime + dur);
+    osc.start(); osc.stop(aCtx.currentTime + dur);
+  } catch(e) {}
+}
+function playStart(type) {
+  const f = {drive:880, other:660, break:440, rest:330};
+  beep(f[type]||440, 0.35, 0.2, 'sine');
+}
+function playAlert(urgent=false) {
+  if (urgent) { beep(1200,.1,.2,'square'); setTimeout(()=>beep(1000,.1,.2,'square'),150); setTimeout(()=>beep(1400,.15,.25,'square'),300); }
+  else         { beep(880,.12,.15,'sine'); setTimeout(()=>beep(1100,.15,.18,'sine'),180); }
+}
+
+// ══════════════════════════════════════════════════════
+// TOTALS
+// ══════════════════════════════════════════════════════
+function totals(entries, cur, ts) {
+  const t = {drive:0,other:0,break:0,rest:0};
+  for (const e of (entries||[])) t[e.type] += e.duration;
+  if (cur && ts) t[cur] += Date.now() - ts;
+  return t;
+}
+
+function contDrive() {
+  let c = 0;
+  const all = [...S.entries];
+  if (S.cur && S.ts) all.push({type:S.cur, start:S.ts, end:Date.now(), duration:Date.now()-S.ts});
+  for (let i = all.length-1; i >= 0; i--) {
+    if (all[i].type==='break'||all[i].type==='rest') break;
+    if (all[i].type==='drive') c += all[i].duration;
+  }
+  return c;
+}
+
+function weekDrive() {
+  let t = 0;
+  const nd = new Date(), dow = nd.getDay()||7;
+  for (let i = 1; i < dow; i++) {
+    const d = new Date(nd); d.setDate(d.getDate()-(dow-i));
+    const ds = d.toISOString().slice(0,10);
+    const day = S.days?.[ds];
+    if (day) for (const e of day.entries) if(e.type==='drive') t+=e.duration;
+  }
+  return t + totals(S.entries, S.cur, S.ts).drive;
+}
+
+function biDrive() {
+  let t = 0;
+  const nd = new Date();
+  for (let i = 14; i >= 1; i--) {
+    const d = new Date(nd); d.setDate(d.getDate()-i);
+    const day = S.days?.[d.toISOString().slice(0,10)];
+    if (day) for (const e of day.entries) if(e.type==='drive') t+=e.duration;
+  }
+  return t + totals(S.entries, S.cur, S.ts).drive;
+}
+
+// ══════════════════════════════════════════════════════
+// ACTIVITY
+// ══════════════════════════════════════════════════════
+let pendingType = null;
+
+function startAct(type) {
+  pendingType = type;
+  const t = T[type];
+  document.getElementById('modal-title').textContent = t.icon+' '+t.label;
+  document.getElementById('m-ok').style.background =
+    type==='drive'?'var(--drive)':type==='other'?'var(--other)':type==='break'?'var(--break)':'var(--rest)';
+  document.getElementById('m-country').value = gpsStr||'';
+  document.getElementById('m-reason').value = '';
+  document.getElementById('m-note').value = '';
+  setGPS(!!gpsPos, gpsStr||'A obter GPS…');
+  document.getElementById('modal').classList.add('open');
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+  pendingType = null;
+}
+
+function confirmAct() {
+  if (!pendingType) return;
+  const now = Date.now();
+  const country = document.getElementById('m-country').value.trim() || gpsStr || '—';
+  const reason  = document.getElementById('m-reason').value;
+  const note    = document.getElementById('m-note').value.trim();
+
+  if (S.cur) {
+    S.entries.push({ type:S.cur, start:S.ts, end:now, duration:now-S.ts,
+      country:S.curCountry||'', reason:S.curReason||'', note:S.curNote||'' });
+  }
+  S.cur = pendingType; S.ts = now;
+  S.curCountry = country; S.curReason = reason; S.curNote = note;
+  sv(); closeModal(); render(); playStart(pendingType);
+}
+
+// ══════════════════════════════════════════════════════
+// RENDER
+// ══════════════════════════════════════════════════════
+let lastAlertLvl = 0;
+
+function render() { renderBtns(); renderGauges(); renderTL(); renderLog(); renderAlerts(); renderBtnDur(); }
+
+function renderBtns() {
+  ['drive','other','break','rest'].forEach(t => {
+    document.getElementById('abtn-'+t).classList.toggle('active', S.cur===t);
+  });
+}
+
+function renderBtnDur() {
+  const t = totals(S.entries, S.cur, S.ts);
+  ['drive','other','break','rest'].forEach(k => {
+    document.getElementById('adur-'+k).textContent = fmtMs(t[k]);
+  });
+}
+
+function renderGauges() {
+  const t = totals(S.entries, S.cur, S.ts);
+  const cd = contDrive();
+  setG('gv-d','gf-d', t.drive, 9*3600000, '--drive');
+  setG('gv-c','gf-c', cd, 4.5*3600000, '--drive');
+  setG('gv-b','gf-b', t.break, 45*60000, '--break');
+  setG('gv-r','gf-r', t.rest, 11*3600000, '--rest');
+}
+
+function setG(vid, fid, val, max, cvar) {
+  const pct = Math.min(100, val/max*100);
+  document.getElementById(vid).textContent = fmtMs(val);
+  const f = document.getElementById(fid);
+  f.style.width = pct+'%';
+  f.style.background = pct>=100?'var(--danger)':pct>=85?'var(--warn)':`var(${cvar})`;
+}
+
+function renderTL() {
+  const bar = document.getElementById('tl'); bar.innerHTML = '';
+  const ds = new Date(); ds.setHours(0,0,0,0);
+  const DAY = 86400000;
+  const all = [...S.entries];
+  if (S.cur && S.ts) all.push({type:S.cur,start:S.ts,end:Date.now(),duration:Date.now()-S.ts});
+  let last = ds.getTime();
+  for (const e of all) {
+    const gap = e.start - last;
+    if (gap > 0) addSeg(bar,'tl-idle',gap/DAY*100);
+    addSeg(bar, T[e.type]?.tl||'tl-idle', Math.min(e.duration,DAY)/DAY*100, T[e.type]?.label+': '+fmtMs(e.duration));
+    last = e.end;
+  }
+}
+function addSeg(bar,cls,pct,title='') {
+  const d = document.createElement('div');
+  d.className = 'tl-seg '+cls;
+  d.style.flex = pct;
+  if (title) d.title = title;
+  bar.appendChild(d);
+}
+
+function renderLog() {
+  const tb = document.getElementById('log-body');
+  if (!S.entries.length) { tb.innerHTML='<tr class="empty-row"><td colspan="4">Inicie uma actividade acima</td></tr>'; return; }
+  tb.innerHTML = [...S.entries].reverse().map(e => {
+    const t = T[e.type];
+    const sub = [e.country,e.reason,e.note].filter(Boolean).join(' · ');
+    return `<tr>
+      <td><span class="badge ${t.bc}">${t.icon} ${t.label}</span></td>
+      <td>${fmtTs(e.start)}</td>
+      <td>${fmtMs(e.duration)}</td>
+      <td style="font-size:.62rem;color:var(--muted2)">${sub||'—'}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderAlerts() {
+  const t = totals(S.entries, S.cur, S.ts);
+  const cd = contDrive(), cdH = cd/3600000;
+  const dH = t.drive/3600000;
+  const wH = weekDrive()/3600000;
+  const items = []; let lvl = 0;
+
+  if (cdH >= 4.5) {
+    items.push({c:'a-danger',m:'⛔ CONDUÇÃO CONTÍNUA: '+fmtMs(cd)+' — PAUSA IMEDIATA!'});
+    lvl = 2;
+  } else if (cdH >= 4) {
+    items.push({c:'a-warn',m:'⚠️ Condução contínua '+fmtMs(cd)+' — Pausa em '+fmtMs((4.5-cdH)*3600000)});
+    lvl = Math.max(lvl,1);
+  }
+  if (dH >= 9) {
+    items.push({c:'a-danger',m:'⛔ LIMITE DIÁRIO: '+fmtMs(t.drive)+' (máx.9h)'});
+    lvl = 2;
+  } else if (dH >= 8.5) {
+    items.push({c:'a-warn',m:'⚠️ Condução diária '+fmtMs(t.drive)+' — Restam '+fmtMs((9-dH)*3600000)});
+    lvl = Math.max(lvl,1);
+  }
+  if (wH >= 56) {
+    items.push({c:'a-danger',m:'⛔ LIMITE SEMANAL: '+fmtMs(wH*3600000)});
+    lvl = 2;
+  } else if (wH >= 52) {
+    items.push({c:'a-warn',m:'⚠️ Condução semanal '+fmtMs(wH*3600000)+' — Restam '+fmtMs((56-wH)*3600000)});
+    lvl = Math.max(lvl,1);
+  }
+  if (S.cur==='drive' && cdH < 4.5) {
+    items.push({c:'a-info',m:'ℹ️ Em condução — próxima pausa em '+fmtMs((4.5-cdH)*3600000)});
+  }
+  if (!items.length && S.cur) {
+    items.push({c:'a-ok',m:'✅ Em conformidade — CE 561/2006'});
+  }
+
+  if (lvl > lastAlertLvl) {
+    playAlert(lvl >= 2);
+    sendNotif('TacóLog PRO ⚠️', items[0]?.m||'Verificar limites', lvl>=2);
+  }
+  lastAlertLvl = lvl;
+
+  document.getElementById('alerts').innerHTML = items.map(i=>`<div class="alert ${i.c}">${i.m}</div>`).join('');
+}
+
+function updateElapsed() {
+  const et = document.getElementById('el-type'), etm = document.getElementById('el-timer'), es = document.getElementById('el-sub');
+  if (!S.cur || !S.ts) {
+    et.textContent='— INATIVO —'; et.style.color='var(--muted2)';
+    etm.textContent='--:--'; etm.style.color='var(--muted2)';
+    es.textContent=''; return;
+  }
+  const t = T[S.cur];
+  et.textContent = t.icon+' '+t.label.toUpperCase();
+  et.style.color = t.color;
+  const s = Math.floor((Date.now()-S.ts)/1000);
+  etm.textContent = fmtSecs(s); etm.style.color = t.color;
+  es.textContent = S.curCountry||'';
+}
+
+// ══════════════════════════════════════════════════════
+// WEEK PAGE
+// ══════════════════════════════════════════════════════
+function renderWeek() {
+  const wMs = weekDrive(), biMs = biDrive();
+  document.getElementById('ws-d').textContent = fmtMs(wMs);
+  setFill('wsf-d', wMs/(56*3600000)*100, 'var(--drive)');
+  document.getElementById('ws-bi').textContent = fmtMs(biMs);
+  setFill('wsf-bi', biMs/(90*3600000)*100, 'var(--warn)');
+
+  const nd = new Date(), dow = nd.getDay()||7;
+  let worked=0, rested=0;
+  const container = document.getElementById('week-days'); container.innerHTML = '';
+
+  for (let i=1; i<=7; i++) {
+    const d = new Date(nd); d.setDate(d.getDate()-(dow-i));
+    const ds = d.toISOString().slice(0,10);
+    const isT = ds===today();
+    const data = isT ? {entries:S.entries} : (S.days?.[ds]||null);
+
+    if (!data) {
+      const div = document.createElement('div'); div.className='day-row';
+      div.innerHTML=`<div class="dr-head"><div class="dr-date" style="color:var(--muted)">${fmtDate(d)}</div><span style="font-size:.6rem;color:var(--muted)">Sem dados</span></div>`;
+      container.appendChild(div); continue;
+    }
+    const dt = totals(data.entries, isT?S.cur:null, isT?S.ts:null);
+    if (dt.drive>0||dt.other>0) worked++;
+    if (dt.rest>=9*3600000) rested++;
+
+    const div = document.createElement('div'); div.className='day-row';
+    const tl = miniTL(data.entries, isT?S.cur:null, isT?S.ts:null);
+    div.innerHTML=`
+      <div class="dr-head">
+        <div class="dr-date">${fmtDate(d)}${isT?' <em style="color:var(--drive);font-size:.6rem;font-style:normal">• HOJE</em>':''}</div>
+        <div class="dr-total">${fmtMs(dt.drive)}</div>
+      </div>
+      <div class="dr-tl">${tl}</div>
+      <div class="dr-stats">
+        <div class="dr-stat">🚛 <span>${fmtMs(dt.drive)}</span></div>
+        <div class="dr-stat">🔧 <span>${fmtMs(dt.other)}</span></div>
+        <div class="dr-stat">☕ <span>${fmtMs(dt.break)}</span></div>
+        <div class="dr-stat">🛏️ <span>${fmtMs(dt.rest)}</span></div>
+      </div>`;
+    container.appendChild(div);
+  }
+
+  document.getElementById('ws-rest').textContent = rested+'/7';
+  document.getElementById('ws-days').textContent = worked+'/7';
+
+  const mon = new Date(nd); mon.setDate(nd.getDate()-(dow-1));
+  const sun = new Date(mon); sun.setDate(mon.getDate()+6);
+  document.getElementById('week-range').textContent =
+    mon.toLocaleDateString('pt-PT',{day:'2-digit',month:'short'})+' – '+
+    sun.toLocaleDateString('pt-PT',{day:'2-digit',month:'short'});
+
+  const biH = biMs/3600000;
+  document.getElementById('biweek-card').innerHTML =
+    `Condução nas últimas 2 semanas: <strong style="color:${biH>=90?'var(--danger)':biH>=80?'var(--warn)':'var(--break)'}">${fmtMs(biMs)}</strong> / 90h<br>
+    ${biH>=90?'⛔ <strong>LIMITE BI-SEMANAL ATINGIDO!</strong>':biH>=80?'⚠️ A aproximar limite bi-semanal':'✅ Dentro do limite bi-semanal CE 561/2006'}`;
+}
+
+function setFill(id, pct, color) {
+  const el = document.getElementById(id); if(!el) return;
+  el.style.width = Math.min(100,pct)+'%';
+  el.style.background = pct>=100?'var(--danger)':pct>=85?'var(--warn)':color;
+}
+
+function miniTL(entries, cur, ts) {
+  const DAY = 86400000;
+  const all = [...(entries||[])];
+  if(cur&&ts) all.push({type:cur,start:ts,end:Date.now(),duration:Date.now()-ts});
+  if(!all.length) return `<div style="flex:1"></div>`;
+  const ds = new Date(all[0].start); ds.setHours(0,0,0,0);
+  let segs='', last=ds.getTime();
+  for(const e of all) {
+    const g=e.start-last;
+    if(g>0) segs+=`<div class="tl-seg tl-idle" style="flex:${g/DAY*100}"></div>`;
+    segs+=`<div class="tl-seg ${T[e.type]?.tl||'tl-idle'}" style="flex:${Math.min(e.duration,DAY)/DAY*100}"></div>`;
+    last=e.end;
+  }
+  return segs;
+}
+
+// ══════════════════════════════════════════════════════
+// VEHICLE / TRIP
+// ══════════════════════════════════════════════════════
+function saveVehicle() {
+  S.v = { pl:$('v-pl').value.toUpperCase(), tr:$('v-tr').value.toUpperCase(), mo:$('v-mo').value, ta:$('v-ta').value };
+  S.d = { na:$('d-na').value, li:$('d-li').value, co:$('d-co').value, ca:$('d-ca').value };
+  sv(); alert('✅ Configuração guardada!');
+}
+
+function loadVehicle() {
+  if(S.v){$('v-pl').value=S.v.pl||'';$('v-tr').value=S.v.tr||'';$('v-mo').value=S.v.mo||'';$('v-ta').value=S.v.ta||'';}
+  if(S.d){$('d-na').value=S.d.na||'';$('d-li').value=S.d.li||'';$('d-co').value=S.d.co||'';$('d-ca').value=S.d.ca||'';}
+}
+
+function saveTripData() {
+  S.trip = { num:$('vt-num').value, orig:$('vt-orig').value, dest:$('vt-dest').value, kms:$('vt-kms').value, kmn:$('vt-kmn').value };
+  sv(); alert('✅ Viagem guardada!');
+}
+
+function loadTrip() {
+  if(S.trip){$('vt-num').value=S.trip.num||'';$('vt-orig').value=S.trip.orig||'';$('vt-dest').value=S.trip.dest||'';$('vt-kms').value=S.trip.kms||'';$('vt-kmn').value=S.trip.kmn||'';}
+  renderBorders();
+}
+
+function renderBorders() {
+  const bl = S.borders||[];
+  const c = document.getElementById('border-log');
+  if(!bl.length){c.innerHTML='<div style="text-align:center;padding:16px;color:var(--muted);font-size:.72rem">Sem cruzamentos registados</div>';return;}
+  c.innerHTML = bl.slice().reverse().map(b=>
+    `<div style="background:var(--surface);border:1px solid var(--border);border-radius:7px;
+      padding:9px 11px;margin-bottom:5px;display:flex;justify-content:space-between;align-items:center;font-size:.72rem">
+      <span>🌍 <strong>${b.from}</strong> → <strong>${b.to}</strong></span>
+      <span style="color:var(--muted2)">${fmtTs(b.ts)}</span>
+    </div>`
+  ).join('');
+}
+
+// ══════════════════════════════════════════════════════
+// EXPORT
+// ══════════════════════════════════════════════════════
+function buildReport(scope) {
+  const entries = scope==='day' ? S.entries : weekEntries();
+  const t = totals(entries, scope==='day'?S.cur:null, scope==='day'?S.ts:null);
+  let r = `====================================\n      TACÓLOG PRO — RELATÓRIO\n====================================\n`;
+  r+=`Data: ${new Date().toLocaleDateString('pt-PT')}\n`;
+  r+=`Período: ${scope==='day'?'Hoje':'Esta semana'}\n\n`;
+  if(S.d?.na)r+=`Motorista: ${S.d.na}\n`;
+  if(S.d?.co)r+=`Empresa: ${S.d.co}\n`;
+  if(S.d?.li)r+=`Carta: ${S.d.li}\n`;
+  if(S.d?.ca)r+=`Cartão tacógrafo: ${S.d.ca}\n`;
+  if(S.v?.pl)r+=`Matrícula: ${S.v.pl}`;
+  if(S.v?.tr)r+=` | Reboque: ${S.v.tr}`;
+  if(S.v?.pl||S.v?.tr)r+='\n';
+  if(S.v?.mo)r+=`Veículo: ${S.v.mo}\n`;
+  if(S.trip?.num)r+=`Viagem: ${S.trip.num}\n`;
+  if(S.trip?.orig&&S.trip?.dest)r+=`Rota: ${S.trip.orig} → ${S.trip.dest}\n`;
+  if(S.trip?.kms)r+=`KM inicial: ${S.trip.kms}${S.trip.kmn?' | KM actual: '+S.trip.kmn:''}\n`;
+  r+=`\n--- RESUMO ---\nCondução:       ${fmtMs(t.drive)}\nOutro trabalho: ${fmtMs(t.other)}\nPausas:         ${fmtMs(t.break)}\nDescanso:       ${fmtMs(t.rest)}\n\n--- REGISTOS ---\n`;
+  for(const e of entries){
+    r+=`[${T[e.type]?.label}] ${fmtTs(e.start)}→${fmtTs(e.end)} (${fmtMs(e.duration)})`;
+    if(e.country)r+=` | ${e.country}`;
+    if(e.reason)r+=` | ${e.reason}`;
+    if(e.note)r+=` | ${e.note}`;
+    r+='\n';
+  }
+  r+=`\n====================================\nTacóLog PRO — CE 561/2006\n`;
+  return r;
+}
+
+function buildCSV(scope) {
+  const entries = scope==='day'?S.entries:weekEntries();
+  const rows=[['Tipo','Início','Fim','Duração (min)','País/Local','Motivo','Nota']];
+  for(const e of entries) rows.push([T[e.type]?.label,fmtTs(e.start),fmtTs(e.end),Math.round(e.duration/60000),e.country||'',e.reason||'',e.note||'']);
+  return rows.map(r=>r.map(c=>`"${String(c).replace(/"/g,'""')}"`).join(',')).join('\n');
+}
+
+function weekEntries() {
+  const all=[], nd=new Date(), dow=nd.getDay()||7;
+  for(let i=1;i<dow;i++){const d=new Date(nd);d.setDate(d.getDate()-(dow-i));const day=S.days?.[d.toISOString().slice(0,10)];if(day)all.push(...day.entries);}
+  all.push(...S.entries); return all;
+}
+
+function doExport(fmt,scope) {
+  const content = fmt==='csv'?buildCSV(scope):buildReport(scope);
+  const mime = fmt==='csv'?'text/csv':'text/plain';
+  const fn = `tacolog_${scope==='day'?S.day:'semana'}.${fmt}`;
+  const a = document.getElementById('dl');
+  a.href='data:'+mime+';charset=utf-8,'+encodeURIComponent(content);
+  a.download=fn; a.click();
+}
+
+function doEmail() {
+  const b=encodeURIComponent(buildReport('day'));
+  const s=encodeURIComponent(`Registo tacógrafo — ${S.day}${S.d?.na?' — '+S.d.na:''}`);
+  window.location.href=`mailto:?subject=${s}&body=${b}`;
+}
+
+async function doShare() {
+  const text=buildReport('day');
+  if(navigator.share){try{await navigator.share({title:'TacóLog PRO',text});}catch(e){}}
+  else{navigator.clipboard?.writeText(text).then(()=>alert('✅ Copiado!'));}
+}
+
+function renderPreview() {
+  document.getElementById('report-preview').textContent=buildReport('day');
+}
+
+function clearAll() {
+  if(!confirm('⚠️ Apagar TODOS os dados?')) return;
+  localStorage.removeItem('tl3'); S=blankState(); sv(); render(); alert('Dados apagados.');
+}
+
+// ══════════════════════════════════════════════════════
+// TAB NAVIGATION
+// ══════════════════════════════════════════════════════
+function goTab(id) {
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  document.getElementById('tab-'+id).classList.add('active');
+  if(id==='semana') renderWeek();
+  if(id==='exportar') renderPreview();
+  if(id==='viagem') loadTrip();
+  if(id==='veiculo') loadVehicle();
+}
+
+// ══════════════════════════════════════════════════════
+// URL SHORTCUTS (from manifest shortcuts)
+// ══════════════════════════════════════════════════════
+const urlAction = new URLSearchParams(location.search).get('action');
+if (urlAction) { window.addEventListener('load', () => { setTimeout(() => startAct(urlAction), 500); }); }
+
+// ══════════════════════════════════════════════════════
+// UTILS
+// ══════════════════════════════════════════════════════
+function fmtMs(ms) {
+  const s=Math.floor(Math.abs(ms)/1000),h=Math.floor(s/3600),m=Math.floor((s%3600)/60);
+  return `${h}h ${String(m).padStart(2,'0')}m`;
+}
+function fmtSecs(s) {
+  const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),sc=s%60;
+  return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(sc).padStart(2,'0')}`;
+}
+function fmtTs(ts) { return new Date(ts).toLocaleTimeString('pt-PT',{hour:'2-digit',minute:'2-digit',second:'2-digit'}); }
+function fmtDate(d) { return d.toLocaleDateString('pt-PT',{weekday:'short',day:'2-digit',month:'short'}); }
+function $(id) { return document.getElementById(id); }
+
+// ══════════════════════════════════════════════════════
+// INIT
+// ══════════════════════════════════════════════════════
+initGPS();
+checkNotifPermission();
+loadVehicle();
+render();
+
+// Keep screen awake if supported
+if ('wakeLock' in navigator) {
+  document.addEventListener('visibilitychange', async () => {
+    if (document.visibilityState === 'visible' && S.cur === 'drive') {
+      try { await navigator.wakeLock.request('screen'); } catch(e) {}
+    }
+  });
+}
+</script>
+</body>
+</html>
